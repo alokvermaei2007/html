@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!-- ======================  START SECTION TOP ========================== -->
+    <section class="wrapper section-top">
+        <div class="section-top__left">
+            <div class="section-top__pagination">
+                Lesson 1 of 5
+                <i class="section-top__arrow"></i>
+            </div>
+            <h1 class="section-top__heading">Understand Budget and Budgeting</h1>
+            <p class="section-top__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita mollitia
+                animi doloremque, nihil iste molestiae quisquam, deleniti eum accusamus adipisci
+                itaque deserunt obcaecati incidunt tempora velit amet esse totam neque?
+            </p>
+        </div>
+        <div class="section-top__right">
+            <img class="section-top__image" src="./images/glass.png" alt="image description">
+        </div>
+    </section>
+    <!-- ======================  END SECTION TOP ========================== -->
+
+    <!-- ======================  START SECTION ACCORDIAN ========================== -->
+    <!-- THIS SCRIPT IS NEEDED TO TOGGLE  CLASS -->
+    <script>
+        function toggleClass(targetElement) {
+            var sourceID = targetElement.getAttribute("data-toggle");
+            document.getElementById(sourceID).classList.toggle("open");
+        }
+    </script>
+
+    <section class="wrapper section-top">
+        <div class="accordian open" id="accordianOne">
+            <div class="accordian__head" onclick="toggleClass(this)" data-toggle="accordianOne">
+                <div class="accordian__link">
+                    <span class="accordian__arrow"></span>
+                    A budget is like a thermostat
+                </div>
+            </div>
+            <div class="accordian__body">
+                <div class="accordian__content">
+                    <p class="accordian__para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste inventore
+                        alias
+                        assumenda
+                        unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam, tempora illum.
+                    </p>
+                    <p class="accordian__para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste inventore
+                        alias
+                        assumenda
+                        unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam, tempora illum.
+                    </p>
+                    <p class="accordian__para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste inventore
+                        alias
+                        assumenda
+                        unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam, tempora illum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================  END SECTION ACCORDIAN ========================== -->
+
+</body>
+
+</html>

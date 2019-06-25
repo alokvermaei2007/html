@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+ /* ======================  START SECTION TOP ==========================  */
+.section-top:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.section-top__left {
+    float: left;
+    padding-top: 40px;
+    width: 60%; 
+}
+.section-top__arrow {
+    border-top: 5px solid transparent;
+    border-left: 10px solid #736b6b;
+    border-bottom: 5px solid transparent;
+    height: 0;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 0;
+}
+
+.section-top__right {
+    float: left;
+    width: 40%;
+}
+.section-top__image {
+    display: block;
+    width: 100%;
+}
+.section-top__pagination {
+    color: #736b6b;
+    display: inline-block;
+    margin: 0 0 15px 0;
+    position: relative;
+    padding-right: 20px;
+}
+.section-top__heading {
+    color: #313131;
+    font-size: 42px;
+    margin: 0 0 15px 0;
+  
+}
+.section-top__para {
+    color: #736b6b;
+    margin: 0 0 15px 0;
+}
+
+ /* ======================  END SECTION TOP ==========================  */
+
+  /* ======================  START SECTION ACCORDIAN ==========================  */
+
+.accordian__head {
+    background-color: #31639c;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px  20px ;
+}
+.accordian__link {
+    position: relative;
+    padding-left: 20px;
+}
+.accordian__arrow {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #fff;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.accordian.open .accordian__arrow  {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-top:0;
+}
+.accordian__body {
+    background-color: #e7eff7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+}
+.accordian.open .accordian__body {
+    max-height:20000px;
+}
+.accordian__content {
+    padding: 20px;
+}
+
+.accordian__para {
+    color: #313131;
+    margin: 0 0 15px 0;
+}
+
+/* ======================  END SECTION ACCORDIAN ==========================  */
