@@ -8,12 +8,22 @@
 
 
     /* THIS SCRIPT IS NEEDED FOR PAGINATION  CLASS */
+
+
     window.currentPage = window.currentPage || 1;
+
+    window.addEventListener("load", () => {
+        renderElement();
+    });
     window.moveToNextPage = (totalCount) => {
         window.currentPage += 1;
         if (window.currentPage > totalCount) {
             window.currentPage = 1;
         }
+        renderElement();
+    }
+
+    function renderElement() {
         const targetedPage = 'page' + window.currentPage;
         [...document.querySelectorAll("[data-page]")]
         .map((element) => {
@@ -24,6 +34,8 @@
                 element.style.display = "none";
             }
         });
+
+        document.getElementById(targetedPage).scrollIntoView();
     }
 
 })(window);

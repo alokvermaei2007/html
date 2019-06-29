@@ -7,7 +7,17 @@
     margin: 0 auto;
 }
 
+article:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
 /* ======================  START SECTION TOP ==========================  */
+.section-top {
+    background-color: #efeff7
+}
+
 .section-top:after {
     content: '';
     clear: both;
@@ -129,6 +139,18 @@
     margin-bottom: 25px;
 }
 
+.d-block--full {
+    background-color: #f7f7ff;
+    padding: 12px;
+    border-top: 1px solid #ccc;
+}
+
+.d-block:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .d-block__heading {
     font-size: 30px;
     border-bottom: 5px solid #a51818;
@@ -193,6 +215,7 @@
 .d-block__head {
     position: relative;
 }
+
 .d-block__heading--image {
     padding-right: 150px;
 }
@@ -266,3 +289,64 @@
 }
 
 /* ======================  END CARD BLOCK ==========================  */
+
+/* ======================  START LEARN SECTION ==========================  */
+
+.section-learn {
+    background-color: #e7e7e7;
+    margin-bottom: 55px;
+    padding: 12px 0;
+}
+
+.c-button {
+    background-color: #fff;
+    border-radius: 7px;
+    border: 1px solid #dadada;
+    font-size: 15px;
+    padding: 10px 12px;
+    position: relative;
+
+}
+
+.c-button--action {
+    padding: 15px 12px;
+    background-color: #19487d;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.c-button--action:hover {
+    opacity: .80;
+}
+
+
+.checkmark {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.checkmark:after {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: block;
+    height: 12px;
+    transform: rotate(45deg);
+    width: 5px;
+}
+
+.checkmark--green:after {
+    border-color: #4ad642;
+}
+
+/* ======================  END LEARN SECTION  ==========================  */
+.section-media {
+    margin-bottom: 15px;
+}
+
+.arrow-head {
+    padding-left: 7px;
+}
