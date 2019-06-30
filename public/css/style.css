@@ -347,6 +347,62 @@ article:after {
     margin-bottom: 15px;
 }
 
+.section-media__iframe {
+    margin-bottom: 15px;
+}
+
 .arrow-head {
     padding-left: 7px;
+}
+
+.tab {
+    margin-bottom: 15px;
+}
+
+.tab__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tab__list:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.tab__list-item {
+    float: left;
+}
+
+.tab__list-link {
+    display: block;
+    cursor: pointer;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.tab__list-link:hover {
+    background-color: #e6e6e6;
+}
+
+.tab__list-link--active {
+    border-bottom: 3px solid #000;
+}
+
+.tab__content {
+    display: none;
+}
+
+.tab__content--open {
+    display: block;
+}
+
+.tab__list-item {
+    display: block;
+}
+
+.tab__content-wrapper {
+    margin-top: 15px;
 }

@@ -123,8 +123,40 @@
 
         <!-- ======================  START SECTION VIDEO ========================== -->
         <section class="wrapper section-media">
-            <iframe src="https://www.youtube.com/watch?v=V-0NAshHRUs" width="100%" height="315" frameborder="0"
-                allowfullscreen></iframe>
+            <iframe class="section-media__iframe" src="https://www.youtube.com/watch?v=V-0NAshHRUs" width="100%"
+                height="315" frameborder="0" allowfullscreen></iframe>
+
+            <div class="tab" data-feature="tab">
+                <ul class="tab__list">
+                    <li class="tab__list-item  ">
+                        <a class="tab__list-link tab__list-link--active" data-target="about">About</a>
+                    </li>
+                    <li class="tab__list-item">
+                        <a class="tab__list-link" data-target="bio">Bio</a>
+                    </li>
+                    <li class="tab__list-item">
+                        <a class="tab__list-link" data-target="transcript">Transcript</a>
+                    </li>
+                </ul>
+                <div class="tab__content-wrapper">
+                    <div class="tab__content tab__content--open" data-content="about">
+                        about
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat.
+                    </div>
+                    <div class="tab__content" data-content="bio">
+                        bio
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat.
+                    </div>
+                    <div class="tab__content" data-content="transcript">
+                        transcript
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat.
+                    </div>
+
+                </div>
+
+
+            </div>
+
 
         </section>
 

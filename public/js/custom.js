@@ -38,4 +38,35 @@
         document.getElementById(targetedPage).scrollIntoView();
     }
 
+    /*THIS SCRIPT IS FOR TAB FEATURE PRESENT BELOW VIDEO LINK*/
+
+    [...document.querySelectorAll('[data-feature="tab"] [data-target]')]
+    .map((element) => {
+        element.addEventListener('click', function (event) {
+            // activate link
+            targetedContent = event.target.getAttribute('data-target');
+
+            [...document.querySelectorAll('[data-feature="tab"] [data-target]')]
+            .map((element) => {
+                if (element.getAttribute("data-target") === targetedContent) {
+                    element.classList.add("tab__list-link--active");
+                } else {
+                    element.classList.remove("tab__list-link--active");
+                }
+            });
+            [...document.querySelectorAll('[data-feature="tab"] [data-content]')]
+            .map((element) => {
+                if (element.getAttribute("data-content") === targetedContent) {
+                    element.classList.add("tab__content--open");
+                } else {
+                    element.classList.remove("tab__content--open");
+                }
+            });
+        });
+    });
+
+
+
+
+
 })(window);
