@@ -406,3 +406,41 @@ article:after {
 .tab__content-wrapper {
     margin-top: 15px;
 }
+
+
+/*======================  START SECTION EXAMPLE ==========================  */
+.example {
+    margin-bottom: 50px;
+}
+
+.example__inner {
+    padding: 0 20px;
+}
+
+.example__wrapper {
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    padding: 40px 20px 20px 20px;
+    position: relative;
+}
+
+.ribbon {
+    position: absolute;
+    top: 7px;
+    padding: 5px 10px 5px 17px;
+    font-size: 9px;
+    left: -11px;
+
+}
+
+.ribbon--gray {
+    background-color: #9c9ca5;
+    color: #fff;
+}
+
+.ordered-list {
+    margin: 0 0 15px 0;
+    padding: 0 0 0 20px;
+    list-style-type: decimal;
+}
+/*======================  END SECTION EXAMPLE ========================== */
