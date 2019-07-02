@@ -15,24 +15,29 @@ article:after {
 
 /* ======================  START SECTION TOP ==========================  */
 .section-top {
-    background-color: #efeff7
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    position: relative;
 }
 
-.section-top:after {
-    content: '';
-    clear: both;
-    display: block;
+.section-top__card {
+    position: relative;
+    top: 50px;
+    max-width: 450px;
+    background: #006e9cc7;
+    padding: 50px 25px;
 }
 
-.section-top__left {
-    float: left;
-    padding-top: 40px;
-    width: 60%;
+.section-top__card > * {
+    color: #fff;
 }
 
 .section-top__arrow {
     border-top: 5px solid transparent;
-    border-left: 10px solid #736b6b;
+    border-left: 10px solid #fff;
     border-bottom: 5px solid transparent;
     height: 0;
     position: absolute;
@@ -41,18 +46,7 @@ article:after {
     width: 0;
 }
 
-.section-top__right {
-    float: left;
-    width: 40%;
-}
-
-.section-top__image {
-    display: block;
-    width: 100%;
-}
-
 .section-top__pagination {
-    color: #736b6b;
     display: inline-block;
     margin: 0 0 15px 0;
     position: relative;
@@ -60,14 +54,11 @@ article:after {
 }
 
 .section-top__heading {
-    color: #313131;
-    font-size: 42px;
+    font-size: 30px;
     margin: 0 0 15px 0;
-
 }
 
 .section-top__para {
-    color: #736b6b;
     margin: 0 0 15px 0;
 }
 
