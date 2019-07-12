@@ -13,8 +13,7 @@
 
 
     <div id="lesson" style="display: none">
-
-        <article data-page="page1" id='page1'>
+                <article data-page="page1" id='page1'>
             <!-- DELETE H1 tag after integration -->
             <h1 style="text-align: center; text-transform: uppercase;">Page 1</h1>
             <!-- ======================  START SECTION TOP ========================== -->
@@ -792,12 +791,12 @@
 
     </div>
 
-    <!-- ======================  START SECTION BLOCK WITH CARD  ========================== -->
+    <!-- ======================  START ASSESSMENT SECTION ========================== -->
 
 
     <div class="bg-gray" id="assignment">
         <div class="wrapper">
-            <div class="assignment">
+            <section class="assignment" style="display: none;">
                 <h1 class="d-block__head">Overview</h1>
                 <p class="d-block__para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, unde?</p>
                 <h2 class="d-block__subheading">Taking the assignment</h2>
@@ -830,13 +829,128 @@
                         Ready to Go
                     </div>
                     <p class="d-block__para">
-                            <button class="c-button c-button--action">
-                                Get Started
-                                <span class="arrow-head">&#10148;</span>
-                            </button>
-                        </p>
+                        <button class="c-button c-button--action">
+                            Get Started
+                            <span class="arrow-head">&#10148;</span>
+                        </button>
+                    </p>
                 </div>
-            </div>
+            </section>
+            <section id="question" class="assignment">
+                <div class="questions">
+                    <div class="questions__count">
+                        Question
+                        <span> 1 of 7</span>
+                    </div>
+                    <div class="questions__para questions__para--bold">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam vero nemo ut
+                        expedita iste facere! Molestias distinctio consectetur ullam perferendis saepe veniam iure
+                        reiciendis dolorem rerum reprehenderit illum dolorum dicta quod, maxime expedita obcaecati
+                        accusamus. Explicabo culpa quas eaque.
+                    </div>
+                    <div class="accordian accordian--option open" id="questionOne">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="questionOne">
+                            <div class="accordian__link">
+                                <span class="accordian__letter">A</span>
+                                Use Historical data despite of rapid growth
+                            </div>
+                        </div>
+                        <div class="accordian__body">
+                            <div class="accordian__content">
+                                <button class="c-button c-button--action" onclick="moveToNextPage(2)">
+                                    Submit Answer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian accordian--option open error" id="questionTwo">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="questionTwo">
+                            <div class="accordian__link">
+                                <span class="accordian__letter">B</span>
+                                <span class="accordian__letter accordian__letter--error">
+                                    &#10006;
+                                </span>
+                                <span class="accordian__letter accordian__letter--success"></span>
+                                Use Historical data despite of rapid growth
+                            </div>
+                        </div>
+                        <div class="accordian__body">
+                            <div class="accordian__content">
+                                <div class="accordian__error">
+                                    <div><b>Not the best Choice</b></div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
+                                        fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
+                                    <button class="c-button c-button--action">
+                                        Next Question
+                                        <span class="arrow-head">&#10140;</span>
+                                    </button>
+                                </div>
+                                <div class="accordian__answer-cta">
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(2)">
+                                        Submit Answer
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian accordian--option open success" id="questionThree">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="questionThree">
+                            <div class="accordian__link">
+                                <span class="accordian__letter">B</span>
+                                <span class="accordian__letter accordian__letter--error">
+                                    &#10006;
+                                </span>
+                                <span class="accordian__letter accordian__letter--success">
+                                        &#10004;
+                                </span>
+                                Use Historical data despite of rapid growth
+                            </div>
+                        </div>
+                        <div class="accordian__body">
+                            <div class="accordian__content">
+                                <div class="accordian__success">
+                                        <div><b>Good Choice!</b></div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
+                                            fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
+                                        <button class="c-button c-button--action">
+                                            Next Question
+                                            <span class="arrow-head">&#10140;</span>
+                                        </button>
+                                    </div>
+                                <div class="accordian__answer-cta">
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(2)">
+                                        Submit Answer
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian accordian--option" id="questionFour">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="questionFour">
+                            <div class="accordian__link">
+                                <span class="accordian__letter">D</span>
+                                Use Historical data despite of rapid growth
+                            </div>
+                        </div>
+                        <div class="accordian__body">
+                            <div class="accordian__content">
+                                <button class="c-button c-button--action" onclick="moveToNextPage(2)">
+                                    Submit Answer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
 
 
 
@@ -844,7 +958,7 @@
 
 
     </div>
-    <!-- ======================  END SECTION BLOCK WITH CARD  ========================== -->
+    <!-- ======================  END ASSESSMENT SECTION ========================== -->
 
 
 

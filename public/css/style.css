@@ -70,6 +70,10 @@ article:after {
     margin-bottom: 25px;
 }
 
+.accordian.accordian--option {
+    margin: 0;
+}
+
 .accordian__head {
     background-color: #31639c;
     cursor: pointer;
@@ -77,9 +81,27 @@ article:after {
     padding: 15px 20px;
 }
 
+.accordian--option .accordian__head {
+    background-color: #e4e4e4;
+    border-top: 1px solid #ccc;
+    color: #333;
+}
+
+.accordian.accordian--option:last-child .accordian__head {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordian.accordian--option:first-child .accordian__head {
+    border-top: 0;
+}
+
+.accordian.accordian--option:last-child.open .accordian__head {
+    border-bottom: 0;
+}
+
 .accordian__link {
     position: relative;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .accordian__arrow {
@@ -92,6 +114,10 @@ article:after {
     position: absolute;
     top: 3px;
     width: 0px;
+}
+
+.accordian.accordian--option.open .accordian__head {
+    background-color: #fff;
 }
 
 .accordian.open .accordian__arrow {
@@ -110,6 +136,11 @@ article:after {
     transition: max-height .3s ease;
 }
 
+.accordian--option .accordian__body {
+    background-color: #fff;
+}
+
+
 .accordian.open .accordian__body {
     max-height: 20000px;
 }
@@ -118,9 +149,99 @@ article:after {
     padding: 20px;
 }
 
+.accordian--option .accordian__content {
+    padding-left: 50px;
+}
+
 .accordian__para {
     color: #313131;
     margin: 0 0 15px 0;
+}
+
+.accordian__letter {
+    position: absolute;
+    left: 0;
+}
+
+.accordian.accordian--option.error .accordian__link {
+    color: #b71717
+}
+
+.accordian__letter--error {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #b71717;
+    left: -5px;
+    top: -3px;
+    text-align: center;
+    line-height: 26px;
+}
+.accordian__letter--success {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #00b100;
+    left: -5px;
+    top: -3px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.accordian.accordian--option.error .accordian__letter,
+.accordian.accordian--option.success .accordian__letter {
+    display: none;
+}
+
+.accordian.accordian--option.error .accordian__letter--error {
+    display: inline-block;
+}
+
+.accordian.accordian--option.error .accordian__letter--success {
+    display: none
+}
+
+.accordian.accordian--option.success .accordian__letter--error {
+    display: none
+}
+
+.accordian.accordian--option.success .accordian__letter--success {
+    display: inline-block;
+}
+
+.accordian.accordian--option.success .accordian__link {
+    color: #00b100;
+}
+
+.accordian.accordian--option.error .accordian__error {
+    display: inline-block;
+}
+
+.accordian.accordian--option .accordian__error {
+    display: none;
+}
+
+.accordian.accordian--option.error .accordian__answer-cta {
+    display: none
+}
+
+.accordian.accordian--option.success .accordian__success {
+    display: inline-block;
+}
+
+.accordian.accordian--option .accordian__success {
+    display: none;
+}
+
+.accordian.accordian--option.success .accordian__answer-cta {
+    display: none
+}
+
+.accordian.accordian--option.error .accordian__content,
+.accordian.accordian--option.success .accordian__content {
+    padding-top: 0;
 }
 
 /* ======================  END SECTION ACCORDIAN ==========================  */
@@ -343,7 +464,15 @@ article:after {
 }
 
 .arrow-head {
-    padding-left: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #18487c;
+    font-size: 16px;
+    font-weight: bold;
+    height: 25px;
+    margin-left: 7px;
+    padding: 5px;
+    width: 25px;
 }
 
 .tab {
@@ -456,6 +585,7 @@ article:after {
     font-size: 30px;
     margin: 0 0 15px 0;
 }
+
 .d-block__subheading {
     font-size: 20px;
     margin: 0 0 15px 0;
@@ -463,4 +593,27 @@ article:after {
 
 .assignment .d-block__list {
     margin-bottom: 50px;
+}
+
+
+
+.questions {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.questions__count {
+    color: #ccc;
+    margin: 0 0 15px 0;
+}
+
+.questions__para {
+    margin: 0 0 15px 0;
+    line-height: 23px;
+}
+
+.questions__para--bold {
+    font-weight: bold;
+    font-style: italic;
 }
