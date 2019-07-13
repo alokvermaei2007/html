@@ -12,758 +12,437 @@
 <body>
 
 
-    <div id="lesson" style="display: none;">
-                <article data-page="page1" id='page1'>
-            <!-- DELETE H1 tag after integration -->
-            <h1 style="text-align: center; text-transform: uppercase;">Page 1</h1>
-            <!-- ======================  START SECTION TOP ========================== -->
-            <section class="wrapper section-top" style="background-image: url('./images/bg-image.jpg')">
-                <div class="section-top__card">
-                    <!-- moveToNextPage(PAGECOUNT) -> PASS TOTAL NUMBER OF PAGE COUNT  -->
-                    <div class="section-top__pagination" onclick="moveToNextPage(2)">
-                        Lesson 1 of 5
-                        <i class="section-top__arrow"></i>
+
+    <article data-page="page1" id='page1'>
+        <!-- DELETE H1 tag after integration -->
+        <h1 style="text-align: center; text-transform: uppercase;">Page 1</h1>
+        <!-- ======================  START SECTION TOP ========================== -->
+        <section class="wrapper section-top" style="background-image: url('./images/bg-image.jpg')">
+            <div class="section-top__card">
+                <!-- moveToNextPage(PAGECOUNT) -> PASS TOTAL NUMBER OF PAGE COUNT  -->
+                <div class="section-top__pagination" onclick="moveToNextPage(2)">
+                    Lesson 1 of 5
+                    <i class="section-top__arrow"></i>
+                </div>
+                <h1 class="section-top__heading">Understand Budget and Budgeting</h1>
+                <p class="section-top__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                    mollitia
+                    animi doloremque, nihil iste molestiae quisquam, deleniti eum accusamus adipisci
+                    itaque deserunt obcaecati incidunt tempora velit amet esse totam neque?
+                </p>
+            </div>
+        </section>
+        <!-- ======================  END SECTION TOP ========================== -->
+
+        <!-- ======================  START SECTION LEARN  ========================== -->
+        <section class="section-learn">
+            <div class="wrapper">
+                <button class="c-button">
+                    <i class="checkmark checkmark--green"></i>
+                    Learn
+                </button>
+            </div>
+
+
+        </section>
+
+        <!-- ======================  END  SECTION  LEARN  ========================== -->
+
+        <!-- ======================  START SECTION BLOCK ========================== -->
+        <section class="wrapper d-block">
+            <h2 class="d-block__heading">A Definition</h2>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ex? Lorem
+                ipsum
+                dolor sit amet consectetur adipisicing elit. Eveniet, molestias!</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ab!</p>
+            <ul class="d-block__list">
+                <li class="d-block__list-item">
+                    <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                        velit
+                        harum
+                        repudiandae molestiae doloribus beatae deserunt quaerat, mollitia voluptates minus!</p>
+                </li>
+                <li class="d-block__list-item">
+                    <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, culpa?
+                        Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Et, blanditiis.</p>
+                </li>
+                <li class="d-block__list-item">
+                    <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dicta?
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum!</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ======================  END SECTION BLOCK  ========================== -->
+
+
+        <!-- ======================  START SECTION ACCORDIAN ========================== -->
+
+        <section class="wrapper accordian-wrapper">
+            <div class="accordian open" id="accordianOne">
+                <div class="accordian__head" onclick="toggleClass(this)" data-toggle="accordianOne">
+                    <div class="accordian__link">
+                        <span class="accordian__arrow"></span>
+                        A budget is like a thermostat
                     </div>
-                    <h1 class="section-top__heading">Understand Budget and Budgeting</h1>
-                    <p class="section-top__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                        mollitia
-                        animi doloremque, nihil iste molestiae quisquam, deleniti eum accusamus adipisci
-                        itaque deserunt obcaecati incidunt tempora velit amet esse totam neque?
-                    </p>
                 </div>
-            </section>
-            <!-- ======================  END SECTION TOP ========================== -->
-
-            <!-- ======================  START SECTION LEARN  ========================== -->
-            <section class="section-learn">
-                <div class="wrapper">
-                    <button class="c-button">
-                        <i class="checkmark checkmark--green"></i>
-                        Learn
-                    </button>
-                </div>
-
-
-            </section>
-
-            <!-- ======================  END  SECTION  LEARN  ========================== -->
-
-            <!-- ======================  START SECTION BLOCK ========================== -->
-            <section class="wrapper d-block">
-                <h2 class="d-block__heading">A Definition</h2>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ex? Lorem
-                    ipsum
-                    dolor sit amet consectetur adipisicing elit. Eveniet, molestias!</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ab!</p>
-                <ul class="d-block__list">
-                    <li class="d-block__list-item">
-                        <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                            velit
+                <div class="accordian__body">
+                    <div class="accordian__content">
+                        <p class="accordian__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
+                            inventore
+                            alias assumenda unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit
                             harum
-                            repudiandae molestiae doloribus beatae deserunt quaerat, mollitia voluptates minus!</p>
+                            totam, tempora illum.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
+                            inventore
+                            alias assumenda unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit
+                            harum
+                            totam, tempora illum.
+                        </p>
+                        <p class="accordian__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
+                            inventore
+                            alias
+                            assumenda
+                            unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam,
+                            tempora
+                            illum.
+                        </p>
+                        <p class="accordian__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
+                            inventore
+                            alias
+                            assumenda
+                            unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam,
+                            tempora
+                            illum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================  END SECTION ACCORDIAN ========================== -->
+
+
+
+        <!-- ======================  START SECTION EXAMPLE ========================== -->
+
+        <section class="wrapper example">
+            <p>To build a flexible Budge</p>
+            <div class="example__inner">
+                <ul class="ordered-list">
+                    <li class="ordered-list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                        atque
+                        sit quia
+                        esse ab excepturi!
                     </li>
-                    <li class="d-block__list-item">
-                        <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, culpa?
-                            Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Et, blanditiis.</p>
+                    <li class="ordered-list__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+                        tenetur
+                        assumenda autem, quam
+                        quae
+                        quis?
                     </li>
-                    <li class="d-block__list-item">
-                        <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dicta?
-                            Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum!</p>
+                    <li class="ordered-list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex
+                        repellat
+                        inventore maiores
+                        aliquid
+                        maxime.
+                    </li>
+                    <li class="ordered-list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                        sint
+                        optio
+                        deleniti minus
+                        placeat
+                        quam?
                     </li>
                 </ul>
-            </section>
+                <div class="example__wrapper">
+                    <div class="ribbon ribbon--gray">EXAMPLE</div>
+                    <div>
 
-            <!-- ======================  END SECTION BLOCK  ========================== -->
-
-
-            <!-- ======================  START SECTION ACCORDIAN ========================== -->
-
-            <section class="wrapper accordian-wrapper">
-                <div class="accordian open" id="accordianOne">
-                    <div class="accordian__head" onclick="toggleClass(this)" data-toggle="accordianOne">
-                        <div class="accordian__link">
-                            <span class="accordian__arrow"></span>
-                            A budget is like a thermostat
-                        </div>
-                    </div>
-                    <div class="accordian__body">
-                        <div class="accordian__content">
-                            <p class="accordian__para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
-                                inventore
-                                alias assumenda unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit
-                                harum
-                                totam, tempora illum.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
-                                inventore
-                                alias assumenda unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit
-                                harum
-                                totam, tempora illum.
-                            </p>
-                            <p class="accordian__para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
-                                inventore
-                                alias
-                                assumenda
-                                unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam,
-                                tempora
-                                illum.
-                            </p>
-                            <p class="accordian__para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
-                                inventore
-                                alias
-                                assumenda
-                                unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam,
-                                tempora
-                                illum.
-                            </p>
-                        </div>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sint quidem explicabo ipsam
+                        quod
+                        inventore quisquam reprehenderit id assumenda beatae perspiciatis impedit quaerat, nihil
+                        aperiam
+                        fugit. Labore eveniet sint quae commodi fugiat veniam numquam eligendi ex nihil! Blanditiis,
+                        unde
+                        veniam itaque corrupti tempora alias aliquam nostrum, ea, id maxime ipsum.
                     </div>
                 </div>
-            </section>
+            </div>
+            <p>Flexible Bugdet is Essentially valuable for the organization operating in voilating business
+                Environment
+            </p>
+            <div class="example__inner">
+                <div class="example__wrapper">
+                    <div class="ribbon ribbon--gray">EXAMPLE</div>
+                    <div>
 
-            <!-- ======================  END SECTION ACCORDIAN ========================== -->
-
-
-
-            <!-- ======================  START SECTION EXAMPLE ========================== -->
-
-            <section class="wrapper example">
-                <p>To build a flexible Budge</p>
-                <div class="example__inner">
-                    <ul class="ordered-list">
-                        <li class="ordered-list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                            atque
-                            sit quia
-                            esse ab excepturi!
-                        </li>
-                        <li class="ordered-list__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
-                            tenetur
-                            assumenda autem, quam
-                            quae
-                            quis?
-                        </li>
-                        <li class="ordered-list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex
-                            repellat
-                            inventore maiores
-                            aliquid
-                            maxime.
-                        </li>
-                        <li class="ordered-list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                            sint
-                            optio
-                            deleniti minus
-                            placeat
-                            quam?
-                        </li>
-                    </ul>
-                    <div class="example__wrapper">
-                        <div class="ribbon ribbon--gray">EXAMPLE</div>
-                        <div>
-
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sint quidem explicabo ipsam
-                            quod
-                            inventore quisquam reprehenderit id assumenda beatae perspiciatis impedit quaerat, nihil
-                            aperiam
-                            fugit. Labore eveniet sint quae commodi fugiat veniam numquam eligendi ex nihil! Blanditiis,
-                            unde
-                            veniam itaque corrupti tempora alias aliquam nostrum, ea, id maxime ipsum.
-                        </div>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sint quidem explicabo ipsam
+                        quod
+                        inventore quisquam reprehenderit id assumenda beatae perspiciatis impedit quaerat, nihil
+                        aperiam
+                        fugit. Labore eveniet sint quae commodi fugiat veniam numquam eligendi ex nihil! Blanditiis,
+                        unde
+                        veniam itaque corrupti tempora alias aliquam nostrum, ea, id maxime ipsum.
                     </div>
                 </div>
-                <p>Flexible Bugdet is Essentially valuable for the organization operating in voilating business
-                    Environment
-                </p>
-                <div class="example__inner">
-                    <div class="example__wrapper">
-                        <div class="ribbon ribbon--gray">EXAMPLE</div>
-                        <div>
-
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non sint quidem explicabo ipsam
-                            quod
-                            inventore quisquam reprehenderit id assumenda beatae perspiciatis impedit quaerat, nihil
-                            aperiam
-                            fugit. Labore eveniet sint quae commodi fugiat veniam numquam eligendi ex nihil! Blanditiis,
-                            unde
-                            veniam itaque corrupti tempora alias aliquam nostrum, ea, id maxime ipsum.
-                        </div>
-                    </div>
-                </div>
+            </div>
 
 
 
 
 
 
-            </section>
+        </section>
 
 
 
-            <!-- ======================  END SECTION EXAMPLE  ========================== -->
-            <!-- ======================  START SECTION VIDEO ========================== -->
-            <section class="wrapper section-media">
-                <iframe class="section-media__iframe" src="https://www.youtube.com/watch?v=V-0NAshHRUs" width="100%"
-                    height="315" frameborder="0" allowfullscreen></iframe>
+        <!-- ======================  END SECTION EXAMPLE  ========================== -->
+        <!-- ======================  START SECTION VIDEO ========================== -->
+        <section class="wrapper section-media">
+            <iframe class="section-media__iframe" src="https://www.youtube.com/watch?v=V-0NAshHRUs" width="100%"
+                height="315" frameborder="0" allowfullscreen></iframe>
 
-                <div class="tab" data-feature="tab">
-                    <ul class="tab__list">
-                        <li class="tab__list-item  ">
-                            <a class="tab__list-link tab__list-link--active" data-target="about">About</a>
-                        </li>
-                        <li class="tab__list-item">
-                            <a class="tab__list-link" data-target="bio">Bio</a>
-                        </li>
-                        <li class="tab__list-item">
-                            <a class="tab__list-link" data-target="transcript">Transcript</a>
-                        </li>
-                    </ul>
-                    <div class="tab__content-wrapper">
-                        <div class="tab__content tab__content--open" data-content="about">
-                            about
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat.
-                        </div>
-                        <div class="tab__content" data-content="bio">
-                            bio
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat.
-                        </div>
-                        <div class="tab__content" data-content="transcript">
-                            transcript
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat.
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-
-            </section>
-
-            <!-- ======================  END SECTION VIDEO ========================== -->
-
-
-            <!-- ======================  START SECTION BLOCK WITH IMAGE ========================== -->
-            <section class="wrapper d-block">
-                <h2 class="d-block__heading">Your Role</h2>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil enim illo
-                    dolores
-                    possimus officiis sed obcaecati tempora nam reiciendis. Lorem ipsum dolor sit amet consectetur
-                    adipisicing
-                    elit. Et, unde.</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
-                    illo
-                    hic
-                    nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
-                    necessitatibus
-                    eos
-                    veniam vel totam. Soluta?</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
-                    illo
-                    hic
-                    nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
-                    necessitatibus
-                    eos
-                    veniam vel totam. Soluta?</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias
-                    quisquam
-                    officiis expedita sunt libero laborum eaque aliquid magnam quibusdam. Eaque, magnam minus. Quo,
-                    architecto
-                    mollitia similique vero maxime ipsum reprehenderit delectus aspernatur est repellat exercitationem
-                    totam
-                    obcaecati dignissimos eaque aliquid, dicta numquam quaerat voluptates magnam temporibus quibusdam
-                    sunt.
-                    Maiores.</p>
-
-                <!-- Block with image -->
-                <h4 class="d-block__image-heading">
-                    How Department Budget Coordinate with master Budget
-                </h4>
-                <div class="d-block__image-wrapper">
-                    <img src="./images/text-and-picture.png" class="d-block__image" alt="image description" />
-                </div>
-            </section>
-
-            <!-- ======================  END SECTION BLOCK WITH IMAGE  ========================== -->
-
-            <!-- ======================  START SECTION BLOCK WITH TABLE ========================== -->
-            <section class="wrapper d-block">
-                <h2 class="d-block__heading">Your Role</h2>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil enim illo
-                    dolores
-                    possimus officiis sed obcaecati tempora nam reiciendis. Lorem ipsum dolor sit amet consectetur
-                    adipisicing
-                    elit. Et, unde.</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
-                    illo
-                    hic
-                    nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
-                    necessitatibus
-                    eos
-                    veniam vel totam. Soluta?</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
-                    illo
-                    hic
-                    nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
-                    necessitatibus
-                    eos
-                    veniam vel totam. Soluta?</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias
-                    quisquam
-                    officiis expedita sunt libero laborum eaque aliquid magnam quibusdam. Eaque, magnam minus. Quo,
-                    architecto
-                    mollitia similique vero maxime ipsum reprehenderit delectus aspernatur est repellat exercitationem
-                    totam
-                    obcaecati dignissimos eaque aliquid, dicta numquam quaerat voluptates magnam temporibus quibusdam
-                    sunt.
-                    Maiores.</p>
-
-                <!-- Block with table -->
-                <table class="d-block__table">
-                    <thead class="d-block__table-head">
-                        <tr class="d-block__table-tr">
-                            <th class="d-block__table-th">Build Parameter</th>
-                            <th class="d-block__table-th">Traditional Approach</th>
-                            <th class="d-block__table-th">Alternative Approach</th>
-                            </th>
-                    </thead>
-                    <tbody>
-                        <tr class="d-block__table-tr">
-                            <td class="d-block__table-td">Goal Setting</td>
-                            <td class="d-block__table-td">
-
-                                <i class="d-block__table-italic">Lorem ipsum dolor:</i> sit amet consectetur adipisicing
-                                elit.
-                                Mollitia,
-                                laudantium.</td>
-                            <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                                dicta!
-                            </td>
-                        </tr>
-                        <tr class="d-block__table-tr">
-                            <td class="d-block__table-td">Time Period</td>
-                            <td class="d-block__table-td"><i class="d-block__table-italic">Lorem ipsum dolor:</i> sit
-                                amet
-                                consectetur adipisicing elit. Mollitia,
-                                laudantium.</td>
-                            <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                                dicta!
-                            </td>
-                        </tr>
-                        <tr class="d-block__table-tr">
-                            <td class="d-block__table-td">Forcasting Process</td>
-                            <td class="d-block__table-td"><i class="d-block__table-italic">Lorem ipsum dolor:</i> sit
-                                amet
-                                consectetur adipisicing elit. Mollitia,
-                                laudantium.</td>
-                            <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                                dicta!
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </section>
-
-
-            <!-- ======================  END SECTION BLOCK WITH TABLE  ========================== -->
-
-
-            <!-- ======================  START SECTION BLOCK WITH CARD ========================== -->
-            <section class="wrapper d-block">
-                <div class="d-block__head">
-                    <h2 class="d-block__heading d-block__heading--image">A selection of Editors's Choice Resource</h2>
-                    <div class="d-block__heading-image">
-                        <img src="https://placebear.com/640/360" />
-                    </div>
-                </div>
-
-
-
-                <p>
-                    <i>
-                        Article from Budgeting selected from Havard Business School
-                    </i>
-                    <a href="#">see all related article here</a>
-                </p>
-
-                <div>
-                    <div class="card card--one-third">
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
-                        </div>
-                        <div class="card__type">Article</div>
-                        <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.
-                        </p>
-                        <div class="card__timestamp">
-                            <div class="card__time">
-                                <img class="card__time-image" src="./images/time.png" alt="time" />
-                                4 Minutes</div>
-                            <div class="card__date">Publised 29 JUN 2016</div>
-                        </div>
-                    </div>
-                    <div class="card card--one-third">
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
-                        </div>
-                        <div class="card__type">Article</div>
-                        <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.
-                        </p>
-                        <div class="card__timestamp">
-                            <div class="card__time">
-                                <img class="card__time-image" src="./images/time.png" alt="time" />
-                                4 Minutes</div>
-                            <div class="card__date">Publised 29 JUN 2016</div>
-                        </div>
-                    </div>
-                    <div class="card card--one-third">
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
-                        </div>
-                        <div class="card__type">Article</div>
-                        <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.
-                        </p>
-                        <div class="card__timestamp">
-                            <div class="card__time">
-                                <img class="card__time-image" src="./images/time.png" alt="time" />
-                                4 Minutes</div>
-                            <div class="card__date">Publised 29 JUN 2016</div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-            </section>
-
-            <!-- ======================  END SECTION BLOCK WITH CARD  ========================== -->
-        </article>
-
-
-        <article data-page="page2" id='page2'>
-            <!-- DELETE H1 tag after integration -->
-            <h1 style="text-align: center; text-transform: uppercase;">Page 2</h1>
-            <!-- ======================  START SECTION TOP ========================== -->
-            <!-- ======================  START SECTION TOP ========================== -->
-            <section class="wrapper section-top" style="background-image: url('./images/bg-image.jpg')">
-                <div class="section-top__card">
-                    <!-- moveToNextPage(PAGECOUNT) -> PASS TOTAL NUMBER OF PAGE COUNT  -->
-                    <div class="section-top__pagination" onclick="moveToNextPage(2)">
-                        Lesson 1 of 5
-                        <i class="section-top__arrow"></i>
-                    </div>
-                    <h1 class="section-top__heading">Understand Budget and Budgeting</h1>
-                    <p class="section-top__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-                        mollitia
-                        animi doloremque, nihil iste molestiae quisquam, deleniti eum accusamus adipisci
-                        itaque deserunt obcaecati incidunt tempora velit amet esse totam neque?
-                    </p>
-                </div>
-            </section>
-            <!-- ======================  END SECTION TOP ========================== -->
-
-
-
-
-            <!-- ======================  START SECTION LEARN  ========================== -->
-            <section class="section-learn">
-                <div class="wrapper">
-                    <button class="c-button">
-                        <i class="checkmark checkmark--green"></i>
-                        Learn
-                    </button>
-                </div>
-
-
-            </section>
-
-            <!-- ======================  END  SECTION  LEARN  ========================== -->
-            <!-- ======================  START SECTION ACCORDIAN ========================== -->
-
-            <section class="wrapper accordian-wrapper">
-                <div class="accordian open" id="accordianOne">
-                    <div class="accordian__head" onclick="toggleClass(this)" data-toggle="accordianOne">
-                        <div class="accordian__link">
-                            <span class="accordian__arrow"></span>
-                            A budget is like a thermostat
-                        </div>
-                    </div>
-                    <div class="accordian__body">
-                        <div class="accordian__content">
-                            <p class="accordian__para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
-                                inventore
-                                alias assumenda unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit
-                                harum
-                                totam, tempora illum.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
-                                inventore
-                                alias assumenda unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit
-                                harum
-                                totam, tempora illum.
-                            </p>
-                            <p class="accordian__para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
-                                inventore
-                                alias
-                                assumenda
-                                unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam,
-                                tempora
-                                illum.
-                            </p>
-                            <p class="accordian__para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
-                                inventore
-                                alias
-                                assumenda
-                                unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam,
-                                tempora
-                                illum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ======================  END SECTION ACCORDIAN ========================== -->
-
-
-            <!-- ======================  START SECTION BLOCK ========================== -->
-            <section class="wrapper d-block">
-                <h2 class="d-block__heading">A Definition</h2>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ex? Lorem
-                    ipsum
-                    dolor sit amet consectetur adipisicing elit. Eveniet, molestias!</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ab!</p>
-                <ul class="d-block__list">
-                    <li class="d-block__list-item">
-                        <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-                            velit
-                            harum
-                            repudiandae molestiae doloribus beatae deserunt quaerat, mollitia voluptates minus!</p>
+            <div class="tab" data-feature="tab">
+                <ul class="tab__list">
+                    <li class="tab__list-item  ">
+                        <a class="tab__list-link tab__list-link--active" data-target="about">About</a>
                     </li>
-                    <li class="d-block__list-item">
-                        <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, culpa?
-                            Lorem
-                            ipsum dolor sit amet consectetur adipisicing elit. Et, blanditiis.</p>
+                    <li class="tab__list-item">
+                        <a class="tab__list-link" data-target="bio">Bio</a>
                     </li>
-                    <li class="d-block__list-item">
-                        <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dicta?
-                            Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum!</p>
+                    <li class="tab__list-item">
+                        <a class="tab__list-link" data-target="transcript">Transcript</a>
                     </li>
                 </ul>
-            </section>
-
-            <!-- ======================  END SECTION BLOCK  ========================== -->
-
-
-
-            <!-- ======================  START SECTION BLOCK WITH IMAGE ========================== -->
-            <section class="wrapper d-block">
-                <h2 class="d-block__heading">Your Role</h2>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil enim illo
-                    dolores
-                    possimus officiis sed obcaecati tempora nam reiciendis. Lorem ipsum dolor sit amet consectetur
-                    adipisicing
-                    elit. Et, unde.</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
-                    illo
-                    hic
-                    nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
-                    necessitatibus
-                    eos
-                    veniam vel totam. Soluta?</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
-                    illo
-                    hic
-                    nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
-                    necessitatibus
-                    eos
-                    veniam vel totam. Soluta?</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias
-                    quisquam
-                    officiis expedita sunt libero laborum eaque aliquid magnam quibusdam. Eaque, magnam minus. Quo,
-                    architecto
-                    mollitia similique vero maxime ipsum reprehenderit delectus aspernatur est repellat exercitationem
-                    totam
-                    obcaecati dignissimos eaque aliquid, dicta numquam quaerat voluptates magnam temporibus quibusdam
-                    sunt.
-                    Maiores.</p>
-
-                <!-- Block with image -->
-                <h4 class="d-block__image-heading">
-                    How Department Budget Coordinate with master Budget
-                </h4>
-                <div class="d-block__image-wrapper">
-                    <img src="./images/text-and-picture.png" class="d-block__image" alt="image description" />
-                </div>
-            </section>
-
-            <!-- ======================  END SECTION BLOCK WITH IMAGE  ========================== -->
-
-            <!-- ======================  START SECTION BLOCK WITH TABLE ========================== -->
-            <section class="wrapper d-block">
-                <h2 class="d-block__heading">Your Role</h2>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil enim illo
-                    dolores
-                    possimus officiis sed obcaecati tempora nam reiciendis. Lorem ipsum dolor sit amet consectetur
-                    adipisicing
-                    elit. Et, unde.</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
-                    illo
-                    hic
-                    nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
-                    necessitatibus
-                    eos
-                    veniam vel totam. Soluta?</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
-                    illo
-                    hic
-                    nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
-                    necessitatibus
-                    eos
-                    veniam vel totam. Soluta?</p>
-                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias
-                    quisquam
-                    officiis expedita sunt libero laborum eaque aliquid magnam quibusdam. Eaque, magnam minus. Quo,
-                    architecto
-                    mollitia similique vero maxime ipsum reprehenderit delectus aspernatur est repellat exercitationem
-                    totam
-                    obcaecati dignissimos eaque aliquid, dicta numquam quaerat voluptates magnam temporibus quibusdam
-                    sunt.
-                    Maiores.</p>
-
-                <!-- Block with table -->
-                <table class="d-block__table">
-                    <thead class="d-block__table-head">
-                        <tr class="d-block__table-tr">
-                            <th class="d-block__table-th">Build Parameter</th>
-                            <th class="d-block__table-th">Traditional Approach</th>
-                            <th class="d-block__table-th">Alternative Approach</th>
-                            </th>
-                    </thead>
-                    <tbody>
-                        <tr class="d-block__table-tr">
-                            <td class="d-block__table-td">Goal Setting</td>
-                            <td class="d-block__table-td">
-
-                                <i class="d-block__table-italic">Lorem ipsum dolor:</i> sit amet consectetur adipisicing
-                                elit.
-                                Mollitia,
-                                laudantium.</td>
-                            <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                                dicta!
-                            </td>
-                        </tr>
-                        <tr class="d-block__table-tr">
-                            <td class="d-block__table-td">Time Period</td>
-                            <td class="d-block__table-td"><i class="d-block__table-italic">Lorem ipsum dolor:</i> sit
-                                amet
-                                consectetur adipisicing elit. Mollitia,
-                                laudantium.</td>
-                            <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                                dicta!
-                            </td>
-                        </tr>
-                        <tr class="d-block__table-tr">
-                            <td class="d-block__table-td">Forcasting Process</td>
-                            <td class="d-block__table-td"><i class="d-block__table-italic">Lorem ipsum dolor:</i> sit
-                                amet
-                                consectetur adipisicing elit. Mollitia,
-                                laudantium.</td>
-                            <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                                dicta!
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </section>
-
-
-            <!-- ======================  END SECTION BLOCK WITH TABLE  ========================== -->
-
-
-            <!-- ======================  START SECTION BLOCK WITH CARD ========================== -->
-            <section class="wrapper d-block">
-                <div class="d-block__head">
-                    <h2 class="d-block__heading d-block__heading--image">A selection of Editors's Choice Resource</h2>
-                    <div class="d-block__heading-image">
-                        <img src="https://placebear.com/640/360" />
+                <div class="tab__content-wrapper">
+                    <div class="tab__content tab__content--open" data-content="about">
+                        about
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat.
                     </div>
+                    <div class="tab__content" data-content="bio">
+                        bio
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat.
+                    </div>
+                    <div class="tab__content" data-content="transcript">
+                        transcript
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat.
+                    </div>
+
                 </div>
 
 
+            </div>
 
-                <p>
-                    <i>
-                        Article from Budgeting selected from Havard Business School
-                    </i>
-                    <a href="#">see all related article here</a>
-                </p>
 
-                <div>
-                    <div class="card card--one-third">
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
-                        </div>
-                        <div class="card__type">Article</div>
-                        <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.
-                        </p>
-                        <div class="card__timestamp">
-                            <div class="card__time">
-                                <img class="card__time-image" src="./images/time.png" alt="time" />
-                                4 Minutes</div>
-                            <div class="card__date">Publised 29 JUN 2016</div>
-                        </div>
+        </section>
+
+        <!-- ======================  END SECTION VIDEO ========================== -->
+
+
+        <!-- ======================  START SECTION BLOCK WITH IMAGE ========================== -->
+        <section class="wrapper d-block">
+            <h2 class="d-block__heading">Your Role</h2>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil enim illo
+                dolores
+                possimus officiis sed obcaecati tempora nam reiciendis. Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Et, unde.</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
+                illo
+                hic
+                nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
+                necessitatibus
+                eos
+                veniam vel totam. Soluta?</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
+                illo
+                hic
+                nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
+                necessitatibus
+                eos
+                veniam vel totam. Soluta?</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias
+                quisquam
+                officiis expedita sunt libero laborum eaque aliquid magnam quibusdam. Eaque, magnam minus. Quo,
+                architecto
+                mollitia similique vero maxime ipsum reprehenderit delectus aspernatur est repellat exercitationem
+                totam
+                obcaecati dignissimos eaque aliquid, dicta numquam quaerat voluptates magnam temporibus quibusdam
+                sunt.
+                Maiores.</p>
+
+            <!-- Block with image -->
+            <h4 class="d-block__image-heading">
+                How Department Budget Coordinate with master Budget
+            </h4>
+            <div class="d-block__image-wrapper">
+                <img src="./images/text-and-picture.png" class="d-block__image" alt="image description" />
+            </div>
+        </section>
+
+        <!-- ======================  END SECTION BLOCK WITH IMAGE  ========================== -->
+
+        <!-- ======================  START SECTION BLOCK WITH TABLE ========================== -->
+        <section class="wrapper d-block">
+            <h2 class="d-block__heading">Your Role</h2>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil enim illo
+                dolores
+                possimus officiis sed obcaecati tempora nam reiciendis. Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Et, unde.</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
+                illo
+                hic
+                nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
+                necessitatibus
+                eos
+                veniam vel totam. Soluta?</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
+                illo
+                hic
+                nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
+                necessitatibus
+                eos
+                veniam vel totam. Soluta?</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias
+                quisquam
+                officiis expedita sunt libero laborum eaque aliquid magnam quibusdam. Eaque, magnam minus. Quo,
+                architecto
+                mollitia similique vero maxime ipsum reprehenderit delectus aspernatur est repellat exercitationem
+                totam
+                obcaecati dignissimos eaque aliquid, dicta numquam quaerat voluptates magnam temporibus quibusdam
+                sunt.
+                Maiores.</p>
+
+            <!-- Block with table -->
+            <table class="d-block__table">
+                <thead class="d-block__table-head">
+                    <tr class="d-block__table-tr">
+                        <th class="d-block__table-th">Build Parameter</th>
+                        <th class="d-block__table-th">Traditional Approach</th>
+                        <th class="d-block__table-th">Alternative Approach</th>
+                        </th>
+                </thead>
+                <tbody>
+                    <tr class="d-block__table-tr">
+                        <td class="d-block__table-td">Goal Setting</td>
+                        <td class="d-block__table-td">
+
+                            <i class="d-block__table-italic">Lorem ipsum dolor:</i> sit amet consectetur adipisicing
+                            elit.
+                            Mollitia,
+                            laudantium.</td>
+                        <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                            dicta!
+                        </td>
+                    </tr>
+                    <tr class="d-block__table-tr">
+                        <td class="d-block__table-td">Time Period</td>
+                        <td class="d-block__table-td"><i class="d-block__table-italic">Lorem ipsum dolor:</i> sit
+                            amet
+                            consectetur adipisicing elit. Mollitia,
+                            laudantium.</td>
+                        <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                            dicta!
+                        </td>
+                    </tr>
+                    <tr class="d-block__table-tr">
+                        <td class="d-block__table-td">Forcasting Process</td>
+                        <td class="d-block__table-td"><i class="d-block__table-italic">Lorem ipsum dolor:</i> sit
+                            amet
+                            consectetur adipisicing elit. Mollitia,
+                            laudantium.</td>
+                        <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                            dicta!
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+        <!-- ======================  END SECTION BLOCK WITH TABLE  ========================== -->
+
+
+        <!-- ======================  START SECTION BLOCK WITH CARD ========================== -->
+        <section class="wrapper d-block">
+            <div class="d-block__head">
+                <h2 class="d-block__heading d-block__heading--image">A selection of Editors's Choice Resource</h2>
+                <div class="d-block__heading-image">
+                    <img src="https://placebear.com/640/360" />
+                </div>
+            </div>
+
+
+
+            <p>
+                <i>
+                    Article from Budgeting selected from Havard Business School
+                </i>
+                <a href="#">see all related article here</a>
+            </p>
+
+            <div>
+                <div class="card card--one-third">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
                     </div>
-                    <div class="card card--one-third">
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
-                        </div>
-                        <div class="card__type">Article</div>
-                        <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.
-                        </p>
-                        <div class="card__timestamp">
-                            <div class="card__time">
-                                <img class="card__time-image" src="./images/time.png" alt="time" />
-                                4 Minutes</div>
-                            <div class="card__date">Publised 29 JUN 2016</div>
-                        </div>
+                    <div class="card__type">Article</div>
+                    <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+                        possimus.
+                    </p>
+                    <div class="card__timestamp">
+                        <div class="card__time">
+                            <img class="card__time-image" src="./images/time.png" alt="time" />
+                            4 Minutes</div>
+                        <div class="card__date">Publised 29 JUN 2016</div>
                     </div>
-                    <div class="card card--one-third">
-                        <div class="card__image-wrapper">
-                            <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
-                        </div>
-                        <div class="card__type">Article</div>
-                        <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.
-                        </p>
-                        <div class="card__timestamp">
-                            <div class="card__time">
-                                <img class="card__time-image" src="./images/time.png" alt="time" />
-                                4 Minutes</div>
-                            <div class="card__date">Publised 29 JUN 2016</div>
-                        </div>
+                </div>
+                <div class="card card--one-third">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
                     </div>
-
-
-
+                    <div class="card__type">Article</div>
+                    <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+                        possimus.
+                    </p>
+                    <div class="card__timestamp">
+                        <div class="card__time">
+                            <img class="card__time-image" src="./images/time.png" alt="time" />
+                            4 Minutes</div>
+                        <div class="card__date">Publised 29 JUN 2016</div>
+                    </div>
+                </div>
+                <div class="card card--one-third">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
+                    </div>
+                    <div class="card__type">Article</div>
+                    <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+                        possimus.
+                    </p>
+                    <div class="card__timestamp">
+                        <div class="card__time">
+                            <img class="card__time-image" src="./images/time.png" alt="time" />
+                            4 Minutes</div>
+                        <div class="card__date">Publised 29 JUN 2016</div>
+                    </div>
                 </div>
 
-            </section>
 
-            <!-- ======================  END SECTION BLOCK WITH CARD  ========================== -->
-        </article>
+
+            </div>
+
+        </section>
+
+        <!-- ======================  END SECTION BLOCK WITH CARD  ========================== -->
 
 
         <footer class="d-block d-block--full">
@@ -787,16 +466,360 @@
                 </p>
             </div>
         </footer>
+    </article>
 
 
-    </div>
+    <article data-page="page2" id='page2'>
+        <!-- DELETE H1 tag after integration -->
+        <h1 style="text-align: center; text-transform: uppercase;">Page 2</h1>
+        <!-- ======================  START SECTION TOP ========================== -->
+        <!-- ======================  START SECTION TOP ========================== -->
+        <section class="wrapper section-top" style="background-image: url('./images/bg-image.jpg')">
+            <div class="section-top__card">
+                <!-- moveToNextPage(PAGECOUNT) -> PASS TOTAL NUMBER OF PAGE COUNT  -->
+                <div class="section-top__pagination" onclick="moveToNextPage(2)">
+                    Lesson 1 of 5
+                    <i class="section-top__arrow"></i>
+                </div>
+                <h1 class="section-top__heading">Understand Budget and Budgeting</h1>
+                <p class="section-top__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                    mollitia
+                    animi doloremque, nihil iste molestiae quisquam, deleniti eum accusamus adipisci
+                    itaque deserunt obcaecati incidunt tempora velit amet esse totam neque?
+                </p>
+            </div>
+        </section>
+        <!-- ======================  END SECTION TOP ========================== -->
+
+
+
+
+        <!-- ======================  START SECTION LEARN  ========================== -->
+        <section class="section-learn">
+            <div class="wrapper">
+                <button class="c-button">
+                    <i class="checkmark checkmark--green"></i>
+                    Learn
+                </button>
+            </div>
+
+
+        </section>
+
+        <!-- ======================  END  SECTION  LEARN  ========================== -->
+        <!-- ======================  START SECTION ACCORDIAN ========================== -->
+
+        <section class="wrapper accordian-wrapper">
+            <div class="accordian open" id="accordianOne">
+                <div class="accordian__head" onclick="toggleClass(this)" data-toggle="accordianOne">
+                    <div class="accordian__link">
+                        <span class="accordian__arrow"></span>
+                        A budget is like a thermostat
+                    </div>
+                </div>
+                <div class="accordian__body">
+                    <div class="accordian__content">
+                        <p class="accordian__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
+                            inventore
+                            alias assumenda unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit
+                            harum
+                            totam, tempora illum.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
+                            inventore
+                            alias assumenda unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit
+                            harum
+                            totam, tempora illum.
+                        </p>
+                        <p class="accordian__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
+                            inventore
+                            alias
+                            assumenda
+                            unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam,
+                            tempora
+                            illum.
+                        </p>
+                        <p class="accordian__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eius facere iste
+                            inventore
+                            alias
+                            assumenda
+                            unde minima sunt id laboriosam neque ipsa, aliquid cumque iure velit harum totam,
+                            tempora
+                            illum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================  END SECTION ACCORDIAN ========================== -->
+
+
+        <!-- ======================  START SECTION BLOCK ========================== -->
+        <section class="wrapper d-block">
+            <h2 class="d-block__heading">A Definition</h2>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ex? Lorem
+                ipsum
+                dolor sit amet consectetur adipisicing elit. Eveniet, molestias!</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ab!</p>
+            <ul class="d-block__list">
+                <li class="d-block__list-item">
+                    <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                        velit
+                        harum
+                        repudiandae molestiae doloribus beatae deserunt quaerat, mollitia voluptates minus!</p>
+                </li>
+                <li class="d-block__list-item">
+                    <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, culpa?
+                        Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Et, blanditiis.</p>
+                </li>
+                <li class="d-block__list-item">
+                    <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dicta?
+                        Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, illum!</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ======================  END SECTION BLOCK  ========================== -->
+
+
+
+        <!-- ======================  START SECTION BLOCK WITH IMAGE ========================== -->
+        <section class="wrapper d-block">
+            <h2 class="d-block__heading">Your Role</h2>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil enim illo
+                dolores
+                possimus officiis sed obcaecati tempora nam reiciendis. Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Et, unde.</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
+                illo
+                hic
+                nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
+                necessitatibus
+                eos
+                veniam vel totam. Soluta?</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
+                illo
+                hic
+                nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
+                necessitatibus
+                eos
+                veniam vel totam. Soluta?</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias
+                quisquam
+                officiis expedita sunt libero laborum eaque aliquid magnam quibusdam. Eaque, magnam minus. Quo,
+                architecto
+                mollitia similique vero maxime ipsum reprehenderit delectus aspernatur est repellat exercitationem
+                totam
+                obcaecati dignissimos eaque aliquid, dicta numquam quaerat voluptates magnam temporibus quibusdam
+                sunt.
+                Maiores.</p>
+
+            <!-- Block with image -->
+            <h4 class="d-block__image-heading">
+                How Department Budget Coordinate with master Budget
+            </h4>
+            <div class="d-block__image-wrapper">
+                <img src="./images/text-and-picture.png" class="d-block__image" alt="image description" />
+            </div>
+        </section>
+
+        <!-- ======================  END SECTION BLOCK WITH IMAGE  ========================== -->
+
+        <!-- ======================  START SECTION BLOCK WITH TABLE ========================== -->
+        <section class="wrapper d-block">
+            <h2 class="d-block__heading">Your Role</h2>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil enim illo
+                dolores
+                possimus officiis sed obcaecati tempora nam reiciendis. Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Et, unde.</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
+                illo
+                hic
+                nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
+                necessitatibus
+                eos
+                veniam vel totam. Soluta?</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste unde
+                illo
+                hic
+                nobis, nemo saepe enim repellendus consequuntur veritatis incidunt obcaecati maiores id
+                necessitatibus
+                eos
+                veniam vel totam. Soluta?</p>
+            <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias
+                quisquam
+                officiis expedita sunt libero laborum eaque aliquid magnam quibusdam. Eaque, magnam minus. Quo,
+                architecto
+                mollitia similique vero maxime ipsum reprehenderit delectus aspernatur est repellat exercitationem
+                totam
+                obcaecati dignissimos eaque aliquid, dicta numquam quaerat voluptates magnam temporibus quibusdam
+                sunt.
+                Maiores.</p>
+
+            <!-- Block with table -->
+            <table class="d-block__table">
+                <thead class="d-block__table-head">
+                    <tr class="d-block__table-tr">
+                        <th class="d-block__table-th">Build Parameter</th>
+                        <th class="d-block__table-th">Traditional Approach</th>
+                        <th class="d-block__table-th">Alternative Approach</th>
+                        </th>
+                </thead>
+                <tbody>
+                    <tr class="d-block__table-tr">
+                        <td class="d-block__table-td">Goal Setting</td>
+                        <td class="d-block__table-td">
+
+                            <i class="d-block__table-italic">Lorem ipsum dolor:</i> sit amet consectetur adipisicing
+                            elit.
+                            Mollitia,
+                            laudantium.</td>
+                        <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                            dicta!
+                        </td>
+                    </tr>
+                    <tr class="d-block__table-tr">
+                        <td class="d-block__table-td">Time Period</td>
+                        <td class="d-block__table-td"><i class="d-block__table-italic">Lorem ipsum dolor:</i> sit
+                            amet
+                            consectetur adipisicing elit. Mollitia,
+                            laudantium.</td>
+                        <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                            dicta!
+                        </td>
+                    </tr>
+                    <tr class="d-block__table-tr">
+                        <td class="d-block__table-td">Forcasting Process</td>
+                        <td class="d-block__table-td"><i class="d-block__table-italic">Lorem ipsum dolor:</i> sit
+                            amet
+                            consectetur adipisicing elit. Mollitia,
+                            laudantium.</td>
+                        <td class="d-block__table-td">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+                            dicta!
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+
+        <!-- ======================  END SECTION BLOCK WITH TABLE  ========================== -->
+
+
+        <!-- ======================  START SECTION BLOCK WITH CARD ========================== -->
+        <section class="wrapper d-block">
+            <div class="d-block__head">
+                <h2 class="d-block__heading d-block__heading--image">A selection of Editors's Choice Resource</h2>
+                <div class="d-block__heading-image">
+                    <img src="https://placebear.com/640/360" />
+                </div>
+            </div>
+
+
+
+            <p>
+                <i>
+                    Article from Budgeting selected from Havard Business School
+                </i>
+                <a href="#">see all related article here</a>
+            </p>
+
+            <div>
+                <div class="card card--one-third">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
+                    </div>
+                    <div class="card__type">Article</div>
+                    <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+                        possimus.
+                    </p>
+                    <div class="card__timestamp">
+                        <div class="card__time">
+                            <img class="card__time-image" src="./images/time.png" alt="time" />
+                            4 Minutes</div>
+                        <div class="card__date">Publised 29 JUN 2016</div>
+                    </div>
+                </div>
+                <div class="card card--one-third">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
+                    </div>
+                    <div class="card__type">Article</div>
+                    <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+                        possimus.
+                    </p>
+                    <div class="card__timestamp">
+                        <div class="card__time">
+                            <img class="card__time-image" src="./images/time.png" alt="time" />
+                            4 Minutes</div>
+                        <div class="card__date">Publised 29 JUN 2016</div>
+                    </div>
+                </div>
+                <div class="card card--one-third">
+                    <div class="card__image-wrapper">
+                        <img class="card__image" src="https://www.fillmurray.com/640/360" alt="" />
+                    </div>
+                    <div class="card__type">Article</div>
+                    <p class="card__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci,
+                        possimus.
+                    </p>
+                    <div class="card__timestamp">
+                        <div class="card__time">
+                            <img class="card__time-image" src="./images/time.png" alt="time" />
+                            4 Minutes</div>
+                        <div class="card__date">Publised 29 JUN 2016</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+        <!-- ======================  END SECTION BLOCK WITH CARD  ========================== -->
+
+        <footer class="d-block d-block--full">
+            <div class="wrapper">
+                <h2 class="d-block__heading">Ready to Move On?</h2>
+                <p class="d-block__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nihil enim illo
+                    dolores elit. Et, unde.
+                </p>
+                <p class="d-block__para">
+                    <button class="c-button c-button--action" onclick="moveToNextPage(3)">
+                        complete
+                        <span class="arrow-head">&#10140;</span>
+                    </button>
+                </p>
+
+                <div>
+                    Next:
+                </div>
+                <p class="d-block__para">
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </footer>
+
+    </article>
+
+
+
 
     <!-- ======================  START ASSESSMENT SECTION ========================== -->
 
 
-    <div class="bg-gray" id="assignment" >
+    <div class="bg-gray" id="assignment" data-page="page3" id='page3'>
         <div class="wrapper">
-            <section class="assignment" style="display: none;">
+            <section class="assignment">
                 <h1 class="d-block__head">Overview</h1>
                 <p class="d-block__para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, unde?</p>
                 <h2 class="d-block__subheading">Taking the assignment</h2>
@@ -829,13 +852,29 @@
                         Ready to Go
                     </div>
                     <p class="d-block__para">
-                        <button class="c-button c-button--action">
+                        <button class="c-button c-button--action" onclick="moveToNextPage(4)">
                             Get Started
                             <span class="arrow-head">&#10140;</span>
                         </button>
                     </p>
                 </div>
             </section>
+        </div>
+    </div>
+
+
+    <!-- FIRST QUESTION -->
+    <!-- NOTE: 
+        3_1 (third option of first question)  is a combination used 
+        to form a unique element reference in the page
+        Below  data attributes are used to get unique refrerence point in page -- 
+         data-answer="3_1"  <-- Give your correct answer for the question
+         data-toggleId="option1_1" <-- Used to facilitate toggle functionality
+         data-toggle="option1_1" <-- Used to facilitate toggle functionality
+         data-selectedOption="1_1" <-- Used to facilitate current selected option
+     -->
+    <div class="bg-gray" data-page="page4" id='page4' data-answer="3_1">
+        <div class="wrapper">
             <section id="question" class="assignment">
                 <div class="questions">
                     <div class="questions__count">
@@ -848,29 +887,13 @@
                         reiciendis dolorem rerum reprehenderit illum dolorum dicta quod, maxime expedita obcaecati
                         accusamus. Explicabo culpa quas eaque.
                     </div>
-                    <div class="accordian accordian--option open" id="questionOne">
-                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="questionOne">
+                    <div class="accordian accordian--option open" data-toggleId="option1_1">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="option1_1">
                             <div class="accordian__link">
                                 <span class="accordian__letter">A</span>
-                                Use Historical data despite of rapid growth
-                            </div>
-                        </div>
-                        <div class="accordian__body">
-                            <div class="accordian__content">
-                                <button class="c-button c-button--action" onclick="moveToNextPage(2)">
-                                    Submit Answer
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordian accordian--option open error" id="questionTwo">
-                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="questionTwo">
-                            <div class="accordian__link">
-                                <span class="accordian__letter">B</span>
                                 <span class="accordian__letter accordian__letter--error">
                                     &#10006;
                                 </span>
-                                <span class="accordian__letter accordian__letter--success"></span>
                                 Use Historical data despite of rapid growth
                             </div>
                         </div>
@@ -880,13 +903,47 @@
                                     <div><b>Not the best Choice</b></div>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
                                         fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
-                                    <button class="c-button c-button--action">
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(5)">
                                         Next Question
                                         <span class="arrow-head">&#10140;</span>
                                     </button>
                                 </div>
                                 <div class="accordian__answer-cta">
-                                    <button class="c-button c-button--action" onclick="moveToNextPage(2)">
+                                    <button class="c-button c-button--action" onclick="submitAnswer(this)"
+                                        data-selectedOption="1_1">
+                                        Submit Answer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian accordian--option" data-toggleId="option2_1">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="option2_1">
+                            <div class="accordian__link">
+                                <span class="accordian__letter">B</span>
+                                <span class="accordian__letter accordian__letter--error">
+                                    &#10006;
+                                </span>
+                                <span class="accordian__letter accordian__letter--success">
+                                    &#10004;
+                                </span>
+                                Use Historical data despite of rapid growth
+                            </div>
+                        </div>
+                        <div class="accordian__body">
+                            <div class="accordian__content">
+                                <div class="accordian__error">
+                                    <div><b>Not the best Choice</b></div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
+                                        fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(5)">
+                                        Next Question
+                                        <span class="arrow-head">&#10140;</span>
+                                    </button>
+                                </div>
+                                <div class="accordian__answer-cta">
+                                    <button class="c-button c-button--action" onclick="submitAnswer(this)"
+                                        data-selectedOption="2_1">
                                         Submit Answer
                                     </button>
                                 </div>
@@ -895,15 +952,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordian accordian--option open success" id="questionThree">
-                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="questionThree">
+                    <div class="accordian accordian--option" data-toggleId="option3_1">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="option3_1">
                             <div class="accordian__link">
-                                <span class="accordian__letter">B</span>
+                                <span class="accordian__letter">D</span>
                                 <span class="accordian__letter accordian__letter--error">
                                     &#10006;
                                 </span>
                                 <span class="accordian__letter accordian__letter--success">
-                                        &#10004;
+                                    &#10004;
                                 </span>
                                 Use Historical data despite of rapid growth
                             </div>
@@ -911,16 +968,17 @@
                         <div class="accordian__body">
                             <div class="accordian__content">
                                 <div class="accordian__success">
-                                        <div><b>Good Choice!</b></div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
-                                            fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
-                                        <button class="c-button c-button--action">
-                                            Next Question
-                                            <span class="arrow-head">&#10140;</span>
-                                        </button>
-                                    </div>
+                                    <div><b>Good Choice!</b></div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
+                                        fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(5)">
+                                        Next Question
+                                        <span class="arrow-head">&#10140;</span>
+                                    </button>
+                                </div>
                                 <div class="accordian__answer-cta">
-                                    <button class="c-button c-button--action" onclick="moveToNextPage(2)">
+                                    <button class="c-button c-button--action" onclick="submitAnswer(this)"
+                                        data-selectedOption="3_1">
                                         Submit Answer
                                     </button>
                                 </div>
@@ -929,18 +987,33 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordian accordian--option" id="questionFour">
-                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="questionFour">
+                    <div class="accordian accordian--option" data-toggleId="option4_1">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="option4_1">
                             <div class="accordian__link">
                                 <span class="accordian__letter">D</span>
+                                <span class="accordian__letter accordian__letter--error">
+                                    &#10006;
+                                </span>
                                 Use Historical data despite of rapid growth
                             </div>
                         </div>
                         <div class="accordian__body">
                             <div class="accordian__content">
-                                <button class="c-button c-button--action" onclick="moveToNextPage(2)">
-                                    Submit Answer
-                                </button>
+                                <div class="accordian__error">
+                                    <div><b>Not the best Choice</b></div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
+                                        fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(5)">
+                                        Next Question
+                                        <span class="arrow-head">&#10140;</span>
+                                    </button>
+                                </div>
+                                <div class="accordian__answer-cta">
+                                    <button class="c-button c-button--action" onclick="submitAnswer(this)"
+                                        data-selectedOption="4_1">
+                                        Submit Answer
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -949,15 +1022,216 @@
 
 
             </section>
-
-
-
-
-
         </div>
 
 
     </div>
+
+    <!-- SECOND QUESTION -->
+    <div class="bg-gray" data-page="page5" id='page5' data-answer="3_2">
+        <div class="wrapper">
+            <section class="assignment">
+                <div class="questions">
+                    <div class="questions__count">
+                        Question
+                        <span> 2 of 7</span>
+                    </div>
+                    <div class="questions__para questions__para--bold">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quam vero nemo ut
+                        expedita iste facere! Molestias distinctio consectetur ullam perferendis saepe veniam iure
+                        reiciendis dolorem rerum reprehenderit illum dolorum dicta quod, maxime expedita obcaecati
+                        accusamus. Explicabo culpa quas eaque.
+                    </div>
+                    <div class="accordian accordian--option open" data-toggleId="option1_2">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="option1_2">
+                            <div class="accordian__link">
+                                <span class="accordian__letter">A</span>
+                                <span class="accordian__letter accordian__letter--error">
+                                    &#10006;
+                                </span>
+                                Use Historical data despite of rapid growth
+                            </div>
+                        </div>
+                        <div class="accordian__body">
+                            <div class="accordian__content">
+                                <div class="accordian__error">
+                                    <div><b>Not the best Choice</b></div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
+                                        fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(6)">
+                                        Next Question
+                                        <span class="arrow-head">&#10140;</span>
+                                    </button>
+                                </div>
+                                <div class="accordian__answer-cta">
+                                    <button class="c-button c-button--action" onclick="submitAnswer(this)"
+                                        data-selectedOption="1_2">
+                                        Submit Answer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian accordian--option" data-toggleId="option2_2">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="option2_2">
+                            <div class="accordian__link">
+                                <span class="accordian__letter">B</span>
+                                <span class="accordian__letter accordian__letter--error">
+                                    &#10006;
+                                </span>
+                                <span class="accordian__letter accordian__letter--success">
+                                    &#10004;
+                                </span>
+                                Use Historical data despite of rapid growth
+                            </div>
+                        </div>
+                        <div class="accordian__body">
+                            <div class="accordian__content">
+                                <div class="accordian__error">
+                                    <div><b>Not the best Choice</b></div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
+                                        fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(6)">
+                                        Next Question
+                                        <span class="arrow-head">&#10140;</span>
+                                    </button>
+                                </div>
+                                <div class="accordian__answer-cta">
+                                    <button class="c-button c-button--action" onclick="submitAnswer(this)"
+                                        data-selectedOption="2_2">
+                                        Submit Answer
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian accordian--option" data-toggleId="option3_2">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="option3_2">
+                            <div class="accordian__link">
+                                <span class="accordian__letter">D</span>
+                                <span class="accordian__letter accordian__letter--error">
+                                    &#10006;
+                                </span>
+                                <span class="accordian__letter accordian__letter--success">
+                                    &#10004;
+                                </span>
+                                Use Historical data despite of rapid growth
+                            </div>
+                        </div>
+                        <div class="accordian__body">
+                            <div class="accordian__content">
+                                <div class="accordian__success">
+                                    <div><b>Good Choice!</b></div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
+                                        fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(6)">
+                                        Next Question
+                                        <span class="arrow-head">&#10140;</span>
+                                    </button>
+                                </div>
+                                <div class="accordian__answer-cta">
+                                    <button class="c-button c-button--action" onclick="submitAnswer(this)"
+                                        data-selectedOption="3_2">
+                                        Submit Answer
+                                    </button>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian accordian--option" data-toggleId="option4_2">
+                        <div class="accordian__head" onclick="toggleClass(this)" data-toggle="option4_2">
+                            <div class="accordian__link">
+                                <span class="accordian__letter">D</span>
+                                <span class="accordian__letter accordian__letter--error">
+                                    &#10006;
+                                </span>
+                                Use Historical data despite of rapid growth
+                            </div>
+                        </div>
+                        <div class="accordian__body">
+                            <div class="accordian__content">
+                                <div class="accordian__error">
+                                    <div><b>Not the best Choice</b></div>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus
+                                        fugiat facilis est neque? Incidunt expedita ratione saepe minus neque.</p>
+                                    <button class="c-button c-button--action" onclick="moveToNextPage(6)">
+                                        Next Question
+                                        <span class="arrow-head">&#10140;</span>
+                                    </button>
+                                </div>
+                                <div class="accordian__answer-cta">
+                                    <button class="c-button c-button--action" onclick="submitAnswer(this)"
+                                        data-selectedOption="4_2">
+                                        Submit Answer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+
+
+    </div>
+
+
+    <!-- CONGRATULATIONS MESSAGE -->
+
+    <div data-page="page6" id='page6'>
+        <div class="wrapper">
+            <div class="questions">
+                <h1 class="questions__success-heading"> Congratulations!</h1>
+                <p class="questions__para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis nisi quia maxime
+                    suscipit
+                    id
+                    perferendis itaque odio adipisci nobis.
+                </p>
+                <button class="c-button c-button--full" onclick="moveToNextPage(7)">
+                    <span class="block-arrow"></span>
+                    <span>Start a New Action Plan</span>
+                </button>
+            </div>
+            <h2 class="d-block__heading">Complete</h2>
+        </div>
+    </div>
+
+
+    <!-- ERROR MESSAGE -->
+
+    <div  class="bg-gray" data-page="page7" id='page7'>
+        <div class="wrapper">
+            <section class="assignment">
+                <div class="questions">
+                    <div class="questions__message">
+                        <b>4 Correct -</b>
+                        <span class="questions__error-msg">You did not pass.</span>
+
+                    </div>
+                    <p class="questions__para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis nisi quia maxime
+                        suscipit
+                        id
+                        perferendis itaque odio adipisci nobis.
+                    </p>
+                    <button class="c-button c-button--action" onclick="moveToNextPage(4)">
+                        <span>Re-take</span>
+                        <span class="arrow-head">&#10140;</span>
+                    </button>
+                    <a href="#"class="questions__link"> Review Your Results</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
     <!-- ======================  END ASSESSMENT SECTION ========================== -->
 
 

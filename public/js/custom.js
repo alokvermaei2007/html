@@ -3,7 +3,8 @@
     /* THIS SCRIPT IS NEEDED TO TOGGLE  CLASS */
     window.toggleClass = (targetElement) => {
         var sourceID = targetElement.getAttribute("data-toggle");
-        document.getElementById(sourceID).classList.toggle("open");
+       elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="'+ sourceID +'"]');
+       elementRef.classList.toggle("open");
     }
 
 
@@ -16,10 +17,10 @@
         renderElement();
     });
     window.moveToNextPage = (totalCount) => {
-        window.currentPage += 1;
-        if (window.currentPage > totalCount) {
-            window.currentPage = 1;
-        }
+        window.currentPage  = totalCount;
+        // if (window.currentPage > totalCount) {
+        //     window.currentPage = 1;
+        // }
         renderElement();
     }
 
@@ -64,6 +65,21 @@
             });
         });
     });
+
+    /*THIS SCRIPT IS QUESTION ANSWER SECTION*/
+
+     window.submitAnswer = (buttonRef) => {
+        selectedAnswer = buttonRef.getAttribute('data-selectedOption');
+        let element = document.getElementById('page' + window.currentPage);
+        currentAnswer = element.getAttribute('data-answer');
+        optionRef = document.querySelector('[data-toggleId="option'+ selectedAnswer +'"]');
+        if (selectedAnswer === currentAnswer) {
+            optionRef.classList.add('success');
+        } else {
+            optionRef.classList.add('error');
+        }
+    }
+
 
 
 

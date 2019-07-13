@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 .wrapper {
     max-width: 1024px;
     margin: 0 auto;
@@ -177,7 +181,9 @@ article:after {
     top: -3px;
     text-align: center;
     line-height: 26px;
+    display: none
 }
+
 .accordian__letter--success {
     width: 25px;
     height: 25px;
@@ -188,6 +194,7 @@ article:after {
     top: -3px;
     text-align: center;
     line-height: 26px;
+    display: none
 }
 
 .accordian.accordian--option.error .accordian__letter,
@@ -414,6 +421,7 @@ article:after {
     background-color: #fff;
     border-radius: 7px;
     border: 1px solid #dadada;
+    cursor: pointer;
     font-size: 15px;
     padding: 10px 12px;
     position: relative;
@@ -434,6 +442,17 @@ article:after {
     opacity: .80;
 }
 
+.c-button--full {
+    background-color: #000;
+    border-radius: 0;
+    border: 0;
+    color: #fff;
+    display: block;
+    padding-left: 35px;
+    text-align: left;
+    width: 100%;
+
+}
 
 .checkmark {
     display: inline-block;
@@ -595,14 +614,9 @@ article:after {
     margin-bottom: 50px;
 }
 
-
-
 .questions {
-    padding: 25px;
-    background-color: #fff;
-    border-radius: 5px;
+    margin-bottom: 30px;
 }
-
 .questions__count {
     color: #ccc;
     margin: 0 0 15px 0;
@@ -616,4 +630,37 @@ article:after {
 .questions__para--bold {
     font-weight: bold;
     font-style: italic;
+}
+
+.questions__success-heading {
+    color: #00b100;
+    font-size: 30px;
+    margin: 0 0 15px;
+}
+
+.block-arrow {
+    border-top: 5px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 5px solid transparent;
+    height: 0;
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    width: 0;
+    
+}
+
+.questions__error-msg {
+    color: #b71717;
+}
+.questions__link {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #19487d;
+}
+.questions__link:hover {
+    opacity: .8;
+}
+.questions__message {
+    margin: 0 0 15px 0;
 }
