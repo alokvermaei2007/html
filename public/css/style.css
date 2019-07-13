@@ -617,6 +617,7 @@ article:after {
 .questions {
     margin-bottom: 30px;
 }
+
 .questions__count {
     color: #ccc;
     margin: 0 0 15px 0;
@@ -647,20 +648,29 @@ article:after {
     left: 20px;
     top: 14px;
     width: 0;
-    
+
 }
 
 .questions__error-msg {
     color: #b71717;
 }
+
+.questions__success-msg {
+    color: #00b100;
+}
+
 .questions__link {
     text-decoration: none;
-    margin-left: 10px;
     color: #19487d;
+}
+
+.questions__link--margin {
+    margin-left: 15px;
 }
 .questions__link:hover {
     opacity: .8;
 }
+
 .questions__message {
     margin: 0 0 15px 0;
 }

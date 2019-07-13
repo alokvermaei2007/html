@@ -11,7 +11,7 @@
     /* THIS SCRIPT IS NEEDED FOR PAGINATION  CLASS */
 
 
-    window.currentPage = window.currentPage || 1;
+    window.currentPage = window.currentPage || 8;
 
     window.addEventListener("load", () => {
         renderElement();
