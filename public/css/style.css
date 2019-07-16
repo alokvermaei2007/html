@@ -260,7 +260,13 @@ article:after {
 .question-answered .accordian .accordian__body{
     max-height: 0
 }
-.question-answered .accordian.open .accordian__body{
+/* .question-answered .accordian.open .accordian__body{
+    max-height: 9999999px;
+} */
+
+.accordian.accordian--option.open.success .accordian__body,
+.accordian.accordian--option.open.error .accordian__body
+{
     max-height: 9999999px;
 }
 
