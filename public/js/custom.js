@@ -11,7 +11,7 @@
     /* THIS SCRIPT IS NEEDED FOR PAGINATION  CLASS */
 
 
-    window.currentPage = window.currentPage || 8;
+    window.currentPage = window.currentPage || 4;
 
     window.addEventListener("load", () => {
         renderElement();
@@ -71,7 +71,9 @@
      window.submitAnswer = (buttonRef) => {
         selectedAnswer = buttonRef.getAttribute('data-selectedOption');
         let element = document.getElementById('page' + window.currentPage);
+        element.classList.add("question-answered");
         currentAnswer = element.getAttribute('data-answer');
+
         optionRef = document.querySelector('[data-toggleId="option'+ selectedAnswer +'"]');
         if (selectedAnswer === currentAnswer) {
             optionRef.classList.add('success');

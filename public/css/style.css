@@ -251,6 +251,19 @@ article:after {
     padding-top: 0;
 }
 
+/* question asnwered case */
+
+.question-answered .accordian__answer-cta {
+    display: none;
+}
+
+.question-answered .accordian .accordian__body{
+    max-height: 0
+}
+.question-answered .accordian.open .accordian__body{
+    max-height: 9999999px;
+}
+
 /* ======================  END SECTION ACCORDIAN ==========================  */
 
 /* ======================  START SECTION BLOCK ==========================  */
