@@ -257,16 +257,16 @@ article:after {
     display: none;
 }
 
-.question-answered .accordian .accordian__body{
+.question-answered .accordian .accordian__body {
     max-height: 0
 }
+
 /* .question-answered .accordian.open .accordian__body{
     max-height: 9999999px;
 } */
 
 .accordian.accordian--option.open.success .accordian__body,
-.accordian.accordian--option.open.error .accordian__body
-{
+.accordian.accordian--option.open.error .accordian__body {
     max-height: 9999999px;
 }
 
@@ -606,10 +606,10 @@ article:after {
 
 
 .bg-gray {
-    background-color: #949e9d;
+
     height: 100%;
     min-height: 100vh;
-    padding-top: 10px;
+
 }
 
 .assignment {
@@ -686,10 +686,95 @@ article:after {
 .questions__link--margin {
     margin-left: 15px;
 }
+
 .questions__link:hover {
     opacity: .8;
 }
 
 .questions__message {
     margin: 0 0 15px 0;
+}
+
+
+.d-block__button-wrapper {
+    padding-top: 30px;
+    text-align: right
+}
+
+.d-block__button-wrapper>.c-button:first-child {
+    margin-right: 30px;
+}
+
+
+
+
+
+.bg-white {
+    background-color: #fff;
+}
+
+.result-page {
+    padding-top: 10px;
+}
+
+.result-page--head {
+    background-color: #949e9d;
+    padding-bottom: 20px;
+
+}
+
+.result-page--body {
+    background-color: #fff;
+}
+
+
+.review-results {
+    list-style: decimal;
+    padding: 0;
+    margin: 0 0 0 15px;
+}
+
+.review-results__question {
+    margin: 0 0 15px 0;
+}
+
+.review-results__answer {
+    padding-left: 30px;
+    position: relative;
+}
+
+.review-results__answer--correct .review-results__text {
+    color: #00b100;
+}
+
+.review-results__answer--incorrect .review-results__text {
+    color: #b71717;
+}
+
+.review-results__text {
+    margin: 0 0 15px 0;
+}
+.review-results__option {
+    padding-left: 40px;
+    position: relative;
+}
+
+.review-results__indicator {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    left: -5px;
+    top: -3px;
+    text-align: center;
+    line-height: 26px;
+    position: absolute;
+}
+
+.review-results__answer--correct .review-results__indicator {
+   
+    background-color: #00b100;
+}
+.review-results__answer--incorrect .review-results__indicator {
+    background-color: #b71717;
 }

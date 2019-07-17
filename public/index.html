@@ -794,7 +794,7 @@
                     dolores elit. Et, unde.
                 </p>
                 <p class="d-block__para">
-                    <button class="c-button c-button--action" onclick="moveToNextPage(3)">
+                    <button class="c-button c-button--action" onclick="moveToNextPage(9)">
                         complete
                         <span class="arrow-head">&#10140;</span>
                     </button>
@@ -812,11 +812,7 @@
     </article>
 
 
-
-
     <!-- ======================  START ASSESSMENT SECTION ========================== -->
-
-
     <div class="bg-gray" id="assignment" data-page="page3" id='page3'>
         <div class="wrapper">
             <section class="assignment">
@@ -1234,48 +1230,137 @@
 
     <!-- SUCCESS MESSAGE -->
 
-    <div class="bg-gray" data-page="page8" id='page8'>
-        <div class="wrapper">
-            <section class="assignment">
-                <div class="questions">
-                    <div class="questions__message">
-                        <b>5 Correct -</b>
-                        <span class="questions__success-msg">Congratulations. You passed.</span>
+    <div data-page="page8" id='page8'>
+        <div class="result-page result-page--head">
+            <div class="wrapper">
+                <section class="assignment">
+                    <div class="questions">
+                        <div class="questions__message">
+                            <b>5 Correct -</b>
+                            <span class="questions__success-msg">Congratulations. You passed.</span>
 
-                    </div>
-                    <div class="questions__message">
-                        <a href="#" class="questions__link"> Please print this page for future Reference</a>
-                    </div>
-
-                    <p class="questions__para">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis nisi quia maxime
-                        suscipit
-                        id
-                        perferendis itaque odio adipisci nobis.
-                    </p>
-                    <div class="questions__message">
-                        <button class="c-button c-button--action" onclick="moveToNextPage(4)">
-                            <span>Continue</span>
-                            <span class="arrow-head">&#10140;</span>
-                        </button>
-                        <a href="#" class="questions__link questions__link--margin"> Review Your Results</a>
-
-                    </div>
-                    <div class="questions__message">
-                        <div>
-                            <i>Next</i>
                         </div>
-                        <div>
-                            <b>On-the-job</b>
+                        <div class="questions__message">
+                            <a href="#" class="questions__link"> Please print this page for future Reference</a>
                         </div>
-                    </div>
 
-                </div>
-            </section>
+                        <p class="questions__para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti debitis nisi quia maxime
+                            suscipit
+                            id
+                            perferendis itaque odio adipisci nobis.
+                        </p>
+                        <div class="questions__message">
+                            <button class="c-button c-button--action" onclick="moveToNextPage(4)">
+                                <span>Continue</span>
+                                <span class="arrow-head">&#10140;</span>
+                            </button>
+                            <a href="#" class="questions__link questions__link--margin"> Review Your Results</a>
+
+                        </div>
+                        <div class="questions__message">
+                            <div>
+                                <i>Next</i>
+                            </div>
+                            <div>
+                                <b>On-the-job</b>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
         </div>
+
+        <div class="result-page result-page--body">
+            <div class="wrapper">
+                <h2 class="d-block__heading">Review Your Results</h2>
+                <ul class="review-results">
+                    <li class="review-results__item">
+                        <p class="review-results__question">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor repudiandae, quibusdam
+                            quas natus, nesciunt fugit ad magni aperiam delectus deserunt inventore voluptate ex saepe
+                            nostrum dolore obcaecati ipsum laborum.
+
+                        </p>
+                        <div class="review-results__answer review-results__answer--correct">
+                            <div class="review-results__text">Your Response</div>
+                            <div class="review-results__option">
+                                <span class="review-results__indicator">
+                                    &#10004;
+                                </span>
+
+                                <div class="review-results__text">Use drive based sales forcasting</div>
+
+                                <div>
+                                    <b>Good Choice</b>
+                                </div>
+                                <p class="review-results__explain">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos commodi sapiente
+                                    modi, impedit fugit ipsum consequatur voluptas harum consectetur voluptates?
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="review-results__question">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolor repudiandae, quibusdam
+                            quas natus, nesciunt fugit ad magni aperiam delectus deserunt inventore voluptate ex saepe
+                            nostrum dolore obcaecati ipsum laborum.
+
+                        </p>
+                        <div class="review-results__answer review-results__answer--incorrect">
+                            <div class="review-results__text">Your Response</div>
+                            <div class="review-results__option">
+                                <span class="review-results__indicator">
+
+                                    &#10006;
+                                </span>
+                                <div class="review-results__text">Use drive based sales forcasting</div>
+
+                                <div><b>Not the best Choice</b></div>
+                                <p class="review-results__explain">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos commodi sapiente
+                                    modi, impedit fugit ipsum consequatur voluptas harum consectetur voluptates?
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
     </div>
 
     <!-- ======================  END ASSESSMENT SECTION ========================== -->
+
+    <!-- ======================  START ASSESSMENT PROMPT SECTION ========================== -->
+
+
+    <div class="bg-gray" id="assignment" data-page="page9" id='page9'>
+        <div class="wrapper">
+            <section class="assignment">
+
+                <p class="d-block__para"> You must pass the assesment before accessing this screen. Would you like to go
+                    the assessment?</p>
+                <div class="d-block__button-wrapper">
+                    <button class="c-button c-button--action" onclick="moveToNextPage(3)">
+                        YES
+                        <span class="arrow-head">&#10140;</span>
+                    </button>
+                    <button class="c-button c-button--action" onclick="moveToNextPage(1)">
+                        HOME
+                        <span class="arrow-head">&#10140;</span>
+                    </button>
+                </div>
+
+            </section>
+        </div>
+    </div>
+    <!-- ======================  END ASSESSMENT PROMPT SECTION ========================== -->
 
 
 
