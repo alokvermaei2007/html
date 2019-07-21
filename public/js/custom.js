@@ -82,4 +82,21 @@
         }
     }
 
+
+     /* THIS SCRIPT FOR ACCORDIAN WITH SINGLE PANEL OPEN AT ANY POINT OF TIME */
+     window.togglePanel = (targetElement) => {
+
+        // find closest parent containing data-feature="accordian"
+       const targetParent = targetElement.closest("[data-feature='accordian']");
+      
+        const sourceID = targetElement.getAttribute("data-toggle");
+        
+        targetParent.querySelectorAll('[data-toggleId]')
+        .forEach(element => {
+            element.classList.remove("open");
+        });
+        elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="'+ sourceID +'"]');
+        elementRef.classList.add("open");
+    }
+
 })(window);

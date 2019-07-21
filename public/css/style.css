@@ -137,7 +137,6 @@ article:after {
     background-color: #e7eff7;
     max-height: 0;
     overflow: hidden;
-    transition: max-height .3s ease;
 }
 
 .accordian--option .accordian__body {
@@ -606,7 +605,7 @@ article:after {
 
 
 .bg-gray {
-
+    background-color: #717171;
     height: 100%;
     min-height: 100vh;
 
