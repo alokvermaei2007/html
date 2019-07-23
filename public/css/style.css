@@ -17,6 +17,55 @@ article:after {
     display: block;
 }
 
+
+
+/* ======================  START LAYOUT SPECIFIC CSS ==========================  */
+
+.l-row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.l-row:after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.l-column {
+    float: left;
+    padding: 0 15px;
+}
+
+.l-column--one-third {
+    width: 33.333333333333%
+}
+
+.l-column--two-third {
+    width: 66.666666666%
+}
+
+.l-column--one-half {
+    width: 50%;
+}
+
+.l-column--one-fourth {
+    width: 25%;
+}
+.l-column--three-fourth {
+    width: 75%;
+}
+
+
+
+
+/* ======================  END LAYOUT SPECIFIC CSS ==========================  */
+
+
+
+
+
 /* ======================  START SECTION TOP ==========================  */
 .section-top {
     background-color: #fff;
@@ -753,6 +802,7 @@ article:after {
 .review-results__text {
     margin: 0 0 15px 0;
 }
+
 .review-results__option {
     padding-left: 40px;
     position: relative;
@@ -771,9 +821,20 @@ article:after {
 }
 
 .review-results__answer--correct .review-results__indicator {
-   
+
     background-color: #00b100;
 }
+
 .review-results__answer--incorrect .review-results__indicator {
     background-color: #b71717;
+}
+
+.image-wrapper {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 15px 0;
+}
+.image-wrapper__img {
+    display: block;
+    max-width: 100%;
 }
