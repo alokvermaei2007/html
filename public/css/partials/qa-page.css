@@ -1,0 +1,153 @@
+.section-front {}
+
+.section-front__head {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    padding: 25px;
+}
+
+.section-front__block {
+    background-color: #425563;
+    color: #fff;
+    padding: 20px;
+    min-height: 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.section-front__heading {
+    margin: 0 0 15px 0;
+}
+
+.section-front__para {
+    margin: 0 0 10px 0;
+}
+
+.section-front__footer {
+    background-color: #ccc;
+    text-align: right;
+    padding: 5px;
+}
+
+
+.section-question__head {
+    margin-bottom: 15px;
+}
+
+.section-question__head:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.section-question__heading {
+    margin: 0 0 15px 0;
+    float: left;
+    padding-top: 26px;
+}
+
+.section-question__logo {
+    float: right;
+    width: 75px;
+    margin: 0;
+}
+
+.section-question__logo img {
+    display: block;
+    max-width: 100%;
+}
+
+.section-question__body {
+    background-color: #425563;
+    color: #fff;
+    padding: 25px 25px 25px 150px;
+    position: relative;
+    min-height: 125px;
+}
+
+.section-question__question {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 100px;
+    margin: 0;
+}
+
+.section-question__question img {
+    display: block;
+    max-width: 100%;
+}
+
+.section-question__footer {
+    padding: 60px 150px;
+}
+
+
+.custom-form {
+    margin-bottom: 10px;
+}
+.custom-form__input {
+    position: absolute;
+    opacity: 0;
+}
+
+.custom-form__input+label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.custom-form__input+label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cccccc;
+    border-radius: 2px;
+}
+
+/* // Box hover */
+.custom-form__input:hover+label:before {
+    background: #425563;
+}
+
+/* // Box checked */
+.custom-form__input:checked+label:before {
+    background: #425563;
+}
+
+/* // Disabled state label. */
+.custom-form__input:disabled+label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+
+/* // Disabled box. */
+.custom-form__input:disabled+label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+
+/* // Checkmark. Could be replaced with an image */
+.custom-form__input:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 12px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+        2px 0 0 white,
+        4px 0 0 white,
+        4px -2px 0 white,
+        4px -4px 0 white,
+        4px -6px 0 white,
+        4px -8px 0 white;
+    transform: rotate(45deg);
+}

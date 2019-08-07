@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="js/external/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+
+    <article data-page="page1" id='page1'>
+        <section class="wrapper section-front">
+            <div class="section-front__head" style="background-image: url('./images/bg.jpg')">
+                <div class="section-front__block">
+                    <h1 class="section-front__heading">Assessment</h1>
+                    <p class="section-front__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                        asperiores,
+                        facilis aperiam optio ab
+                        culpa odio ipsa delectus reiciendis obcaecati aliquid fugit corrupti.
+                    </p>
+                    <p class="section-front__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                        asperiores,
+                        facilis aperiam optio ab
+                        culpa odio ipsa delectus reiciendis obcae.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section-front__footer" onclick="moveToNextPage(2)">
+                <button class="c-button">
+                    Next
+                    <span>&#10140;</span>
+                </button>
+            </div>
+
+
+
+
+        </section>
+    </article>
+    <article data-page="page2" id='page2'>
+
+        <section class="wrapper section-question">
+            <div class="section-question__head">
+                <h1 class="section-question__heading">Assessment Question</h1>
+                <figure class="section-question__logo">
+                    <img src="./images/logo.png" alt="logo" />
+                </figure>
+            </div>
+            <div class="section-question__body">
+                <figure class="section-question__question">
+                    <img src="./images/question-mark.png" alt="logo" />
+                </figure>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere dolores assumenda eius dicta
+                    quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere dolores assumenda eius dicta
+                    quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere dolores assumenda eius dicta
+                    quis! Quod distinctio suscipit deleniti optio.
+                </p>
+            </div>
+            <div class="section-question__footer">
+                <form>
+                    <div class="custom-form">
+                        <input id="name" class="custom-form__input" type="checkbox" name="ques1" />
+                        <label for="name" class="custom-form__label">Name</label>
+                    </div>
+                    <div class="custom-form">
+                        <input id="dl" class="custom-form__input" type="checkbox" name="ques1" />
+                        <label for="dl" class="custom-form__label">Drivers License</label>
+                    </div>
+                    <div class="custom-form">
+                        <input id="ssn" class="custom-form__input" type="checkbox" name="ques1" />
+                        <label for="ssn" class="custom-form__label">Social Security Number</label>
+                    </div>
+                    <div class="custom-form">
+                        <input id="dob" class="custom-form__input" type="checkbox" name="ques1" />
+                        <label for="dob" class="custom-form__label">Date of Birth</label>
+                    </div>
+                </form>
+            </div>
+            <div class="section-front__footer" onclick="moveToNextPage(2)">
+                <button class="c-button">
+                    Submit
+                    <span>&#10140;</span>
+                </button>
+            </div>
+
+        </section>
+
+    </article>
+
+
+    <script src="js/external/js/jquery.js"></script>
+    <script src="js/external/js/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
