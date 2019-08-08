@@ -6,12 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900&display=swap" rel="stylesheet">
     <link href="js/external/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
+
+    <div id="correctDialog" title="Correct">
+        <p>
+            Thats right!. You selected correct answer.
+        </p>
+        <div class="dialog__cta">
+            <button class="c-button">
+                continue
+            </button>
+        </div>
+
+    </div>
+    <div id="incorrectDialog" title="Incorrect">
+
+        <p>Thats wrong!. You selected wrong answer.</p>
+        <div>
+            <button class="c-button" onclick="closeDialog()">
+                continue
+            </button>
+        </div>
+    </div>
 
     <article data-page="page1" id='page1'>
         <section class="wrapper section-front">
@@ -46,50 +68,56 @@
     <article data-page="page2" id='page2'>
 
         <section class="wrapper section-question">
-            <div class="section-question__head">
-                <h1 class="section-question__heading">Assessment Question</h1>
-                <figure class="section-question__logo">
-                    <img src="./images/logo.png" alt="logo" />
-                </figure>
-            </div>
-            <div class="section-question__body">
-                <figure class="section-question__question">
-                    <img src="./images/question-mark.png" alt="logo" />
-                </figure>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere dolores assumenda eius dicta
-                    quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere dolores assumenda eius dicta
-                    quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere dolores assumenda eius dicta
-                    quis! Quod distinctio suscipit deleniti optio.
-                </p>
-            </div>
-            <div class="section-question__footer">
-                <form>
+            <form>
+                <div class="section-question__head">
+                    <h1 class="section-question__heading">Assessment Question</h1>
+                    <figure class="section-question__logo">
+                        <img src="./images/logo.png" alt="logo" />
+                    </figure>
+                </div>
+                <div class="section-question__body">
+                    <figure class="section-question__question">
+                        <img src="./images/question-mark.png" alt="logo" />
+                    </figure>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere dolores assumenda eius
+                        dicta
+                        quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Eaque facere dolores assumenda eius dicta
+                        quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Eaque facere dolores assumenda eius dicta
+                        quis! Quod distinctio suscipit deleniti optio.
+                    </p>
+                </div>
+                <div class="section-question__footer">
+
                     <div class="custom-form">
-                        <input id="name" class="custom-form__input" type="checkbox" name="ques1" />
+                        <input id="name" class="custom-form__input" type="checkbox" name="ques1" value="1" />
                         <label for="name" class="custom-form__label">Name</label>
                     </div>
                     <div class="custom-form">
-                        <input id="dl" class="custom-form__input" type="checkbox" name="ques1" />
+                        <input id="dl" class="custom-form__input" type="checkbox" name="ques1" value="2" />
                         <label for="dl" class="custom-form__label">Drivers License</label>
                     </div>
                     <div class="custom-form">
-                        <input id="ssn" class="custom-form__input" type="checkbox" name="ques1" />
+                        <input id="ssn" class="custom-form__input" type="checkbox" name="ques1" value="3" />
                         <label for="ssn" class="custom-form__label">Social Security Number</label>
                     </div>
                     <div class="custom-form">
-                        <input id="dob" class="custom-form__input" type="checkbox" name="ques1" />
+                        <input id="dob" class="custom-form__input" type="checkbox" name="ques1" value="4" />
                         <label for="dob" class="custom-form__label">Date of Birth</label>
                     </div>
-                </form>
-            </div>
-            <div class="section-front__footer" onclick="moveToNextPage(2)">
-                <button class="c-button">
-                    Submit
-                    <span>&#10140;</span>
-                </button>
-            </div>
 
+                </div>
+                <div class="section-front__footer">
+                    <button class="c-button" data-form="submit">
+                        Submit
+                        <span>&#10140;</span>
+                    </button>
+                </div>
+            </form>
         </section>
 
     </article>

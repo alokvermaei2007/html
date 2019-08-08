@@ -1,10 +1,10 @@
 ;
-((window) => {
+((window, $) => {
     /* THIS SCRIPT IS NEEDED TO TOGGLE  CLASS */
     window.toggleClass = (targetElement) => {
         var sourceID = targetElement.getAttribute("data-toggle");
-       elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="'+ sourceID +'"]');
-       elementRef.classList.toggle("open");
+        elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
+        elementRef.classList.toggle("open");
     }
 
 
@@ -17,7 +17,7 @@
         renderElement();
     });
     window.moveToNextPage = (totalCount) => {
-        window.currentPage  = totalCount;
+        window.currentPage = totalCount;
         // if (window.currentPage > totalCount) {
         //     window.currentPage = 1;
         // }
@@ -68,13 +68,13 @@
 
     /*THIS SCRIPT IS QUESTION ANSWER SECTION*/
 
-     window.submitAnswer = (buttonRef) => {
+    window.submitAnswer = (buttonRef) => {
         selectedAnswer = buttonRef.getAttribute('data-selectedOption');
         let element = document.getElementById('page' + window.currentPage);
         element.classList.add("question-answered");
         currentAnswer = element.getAttribute('data-answer');
 
-        optionRef = document.querySelector('[data-toggleId="option'+ selectedAnswer +'"]');
+        optionRef = document.querySelector('[data-toggleId="option' + selectedAnswer + '"]');
         if (selectedAnswer === currentAnswer) {
             optionRef.classList.add('success');
         } else {
@@ -83,20 +83,53 @@
     }
 
 
-     /* THIS SCRIPT FOR ACCORDIAN WITH SINGLE PANEL OPEN AT ANY POINT OF TIME */
-     window.togglePanel = (targetElement) => {
+    /* THIS SCRIPT FOR ACCORDIAN WITH SINGLE PANEL OPEN AT ANY POINT OF TIME */
+    window.togglePanel = (targetElement) => {
 
         // find closest parent containing data-feature="accordian"
-       const targetParent = targetElement.closest("[data-feature='accordian']");
-      
+        const targetParent = targetElement.closest("[data-feature='accordian']");
+
         const sourceID = targetElement.getAttribute("data-toggle");
-        
+
         targetParent.querySelectorAll('[data-toggleId]')
-        .forEach(element => {
-            element.classList.remove("open");
-        });
-        elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="'+ sourceID +'"]');
+            .forEach(element => {
+                element.classList.remove("open");
+            });
+        elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
         elementRef.classList.add("open");
     }
 
-})(window);
+})(window, jQuery);
+
+
+
+$(document).ready(function () {
+
+    $("#correctDialog, #incorrectDialog").dialog({
+        autoOpen: false,
+        classes: {
+            "ui-dialog": "custom-dialog"
+        },
+        minWidth: 500
+    });
+
+    $('[data-form="submit"]').on('click', function (event) {
+        event.preventDefault();
+        const val = $(this).closest("form").find('input[name="ques1"]:checked').val();
+        correctAnswer();
+
+    });
+
+    function correctAnswer() {
+        $("#correctDialog").dialog("open");
+    }
+
+    function incorrectAnswer() {
+        $("#incorrectDialog").dialog();
+    }
+
+   $(".dialog__cta button").on('click', function(event){
+    event.preventDefault();
+    $("#correctDialog, #incorrectDialog").dialog("close");
+   });
+});
