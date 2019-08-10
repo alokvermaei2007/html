@@ -105,7 +105,9 @@
 
 $(document).ready(function () {
 
-    $("#correctDialog, #incorrectDialog").dialog({
+    let nextQuestion;
+
+    $("#correctDialog, #incorrectDialog, #noAnswer").dialog({
         autoOpen: false,
         classes: {
             "ui-dialog": "custom-dialog"
@@ -115,21 +117,76 @@ $(document).ready(function () {
 
     $('[data-form="submit"]').on('click', function (event) {
         event.preventDefault();
-        const val = $(this).closest("form").find('input[name="ques1"]:checked').val();
-        correctAnswer();
 
+        const formRef = $(this).closest("form");
+        nextQuestion = formRef.attr("data-next-question");
+        const isMultipleChoice = formRef.attr("data-question-type") === 'multiple'
+        const answer = formRef.attr("data-answer").split(',');
+        const value = [];
+
+        if (isMultipleChoice) {
+            $.each(formRef.find("input[type='checkbox']:checked"), function () {
+                const selectedAnswer = $(this).val()
+                if (!!selectedAnswer) {
+                    value.push(selectedAnswer);
+                }
+
+            });
+        } else {
+            const selectedAnswer = formRef.find("input[type='radio']:checked").val()
+            if (!!selectedAnswer) {
+                value.push(selectedAnswer);;
+            }
+
+        }
+
+        if (value.length <= 0) {
+            noAnswer();
+            return;
+        }
+
+        JSON.stringify(answer) == JSON.stringify(value) ? correctAnswer() : incorrectAnswer();
     });
 
     function correctAnswer() {
         $("#correctDialog").dialog("open");
     }
 
-    function incorrectAnswer() {
-        $("#incorrectDialog").dialog();
+    function noAnswer() {
+        $("#noAnswer").dialog("open");
     }
 
-   $(".dialog__cta button").on('click', function(event){
-    event.preventDefault();
-    $("#correctDialog, #incorrectDialog").dialog("close");
-   });
+    function incorrectAnswer() {
+        $("#incorrectDialog").dialog("open");
+    }
+
+    window.closeDialog = () => {
+        if ($("#correctDialog").dialog("isOpen")) {
+            $("#correctDialog").dialog("close");
+        }
+        if ($("#incorrectDialog").dialog("isOpen")) {
+            $("#incorrectDialog").dialog("close");
+        }
+
+        if ($("#noAnswer").dialog("isOpen")) {
+            $("#noAnswer").dialog("close");
+        }
+    }
+    // $(".dialog__cta button").on('click', function (event) {
+    //     event.preventDefault();
+    //     $("#correctDialog, #incorrectDialog").dialog("close");
+    // });
+
+
+
+    window.moveNext = () => {
+        // const hasNextQuestion = !!nextQuestion;
+        window.closeDialog();
+        if (!!nextQuestion) {
+            window.moveToNextPage(nextQuestion);
+        }
+
+
+
+    }
 });

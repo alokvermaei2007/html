@@ -19,7 +19,7 @@
             Thats right!. You selected correct answer.
         </p>
         <div class="dialog__cta">
-            <button class="c-button">
+            <button class="c-button" onclick="moveNext()">
                 continue
             </button>
         </div>
@@ -28,12 +28,22 @@
     <div id="incorrectDialog" title="Incorrect">
 
         <p>Thats wrong!. You selected wrong answer.</p>
-        <div>
-            <button class="c-button" onclick="closeDialog()">
+        <div class="dialog__cta">
+            <button class="c-button" onclick="moveNext()">
                 continue
             </button>
         </div>
     </div>
+    <div id="noAnswer" title="Invalid Answer">
+
+            <p>You must complete the question before Submitting</p>
+            <div class="dialog__cta">
+                <button class="c-button" onclick="closeDialog()">
+                    Ok
+                </button>
+            </div>
+        </div>
+    
 
     <article data-page="page1" id='page1'>
         <section class="wrapper section-front">
@@ -66,9 +76,8 @@
         </section>
     </article>
     <article data-page="page2" id='page2'>
-
         <section class="wrapper section-question">
-            <form>
+            <form data-question-type="multiple" data-answer="1,3" data-next-question="3">
                 <div class="section-question__head">
                     <h1 class="section-question__heading">Assessment Question</h1>
                     <figure class="section-question__logo">
@@ -121,6 +130,118 @@
         </section>
 
     </article>
+
+    <article data-page="page3" id='page3'>
+        <section class="wrapper section-question">
+            <form data-answer="3" data-next-question="4">
+                <div class="section-question__head">
+                    <h1 class="section-question__heading">Assessment Question</h1>
+                    <figure class="section-question__logo">
+                        <img src="./images/logo.png" alt="logo" />
+                    </figure>
+                </div>
+                <div class="section-question__body">
+                    <figure class="section-question__question">
+                        <img src="./images/question-mark.png" alt="logo" />
+                    </figure>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere dolores assumenda eius
+                        dicta
+                        quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Eaque facere dolores assumenda eius dicta
+                        quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur
+                        adipisicing
+                        elit. Eaque facere dolores assumenda eius dicta
+                        quis! Quod distinctio suscipit deleniti optio.
+                    </p>
+                </div>
+                <div class="section-question__footer">
+
+                    <div class="custom-form">
+                        <input id="name2" class="custom-form__input" type="radio" name="ques2" value="1" />
+                        <label for="name2" class="custom-form__label">Name2</label>
+                    </div>
+                    <div class="custom-form">
+                        <input id="dl2" class="custom-form__input" type="radio" name="ques2" value="2" />
+                        <label for="dl2" class="custom-form__label">Drivers License2</label>
+                    </div>
+                    <div class="custom-form">
+                        <input id="ssn2" class="custom-form__input" type="radio" name="ques2" value="3" />
+                        <label for="ssn2" class="custom-form__label">Social Security Number2</label>
+                    </div>
+                    <div class="custom-form">
+                        <input id="dob2" class="custom-form__input" type="radio" name="ques2" value="4" />
+                        <label for="dob2" class="custom-form__label">Date of Birth2</label>
+                    </div>
+
+                </div>
+                <div class="section-front__footer">
+                    <button class="c-button" data-form="submit">
+                        Submit
+                        <span>&#10140;</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </article>
+
+    <article data-page="page4" id='page4'>
+            <section class="wrapper section-question">
+                <form data-answer="3">
+                    <div class="section-question__head">
+                        <h1 class="section-question__heading">Assessment Question</h1>
+                        <figure class="section-question__logo">
+                            <img src="./images/logo.png" alt="logo" />
+                        </figure>
+                    </div>
+                    <div class="section-question__body">
+                        <figure class="section-question__question">
+                            <img src="./images/question-mark.png" alt="logo" />
+                        </figure>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere dolores assumenda eius
+                            dicta
+                            quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Eaque facere dolores assumenda eius dicta
+                            quis! Quod distinctio suscipit deleniti optio. Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. Eaque facere dolores assumenda eius dicta
+                            quis! Quod distinctio suscipit deleniti optio.
+                        </p>
+                    </div>
+                    <div class="section-question__footer">
+    
+                        <div class="custom-form">
+                            <input id="name3" class="custom-form__input" type="radio" name="ques3" value="1" />
+                            <label for="name3" class="custom-form__label">Name3</label>
+                        </div>
+                        <div class="custom-form">
+                            <input id="dl3" class="custom-form__input" type="radio" name="ques3" value="2" />
+                            <label for="dl3" class="custom-form__label">Drivers License3</label>
+                        </div>
+                        <div class="custom-form">
+                            <input id="ssn3" class="custom-form__input" type="radio" name="ques3" value="3" />
+                            <label for="ssn3" class="custom-form__label">Social Security Number3</label>
+                        </div>
+                        <div class="custom-form">
+                            <input id="dob3" class="custom-form__input" type="radio" name="ques3" value="4" />
+                            <label for="dob3" class="custom-form__label">Date of Birth3</label>
+                        </div>
+    
+                    </div>
+                    <div class="section-front__footer">
+                        <button class="c-button" data-form="submit">
+                            Submit
+                            <span>&#10140;</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+    
+        </article>
 
 
     <script src="js/external/js/jquery.js"></script>
