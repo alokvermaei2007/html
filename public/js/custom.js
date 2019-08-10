@@ -161,32 +161,13 @@ $(document).ready(function () {
     }
 
     window.closeDialog = () => {
-        if ($("#correctDialog").dialog("isOpen")) {
-            $("#correctDialog").dialog("close");
-        }
-        if ($("#incorrectDialog").dialog("isOpen")) {
-            $("#incorrectDialog").dialog("close");
-        }
-
-        if ($("#noAnswer").dialog("isOpen")) {
-            $("#noAnswer").dialog("close");
-        }
+        $("#correctDialog, #incorrectDialog, #noAnswer").dialog("close");
     }
-    // $(".dialog__cta button").on('click', function (event) {
-    //     event.preventDefault();
-    //     $("#correctDialog, #incorrectDialog").dialog("close");
-    // });
-
-
 
     window.moveNext = () => {
-        // const hasNextQuestion = !!nextQuestion;
         window.closeDialog();
         if (!!nextQuestion) {
             window.moveToNextPage(nextQuestion);
         }
-
-
-
     }
 });
