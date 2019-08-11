@@ -145,6 +145,17 @@ $(document).ready(function () {
             return;
         }
 
+        if (!nextQuestion) {
+
+            $.each($('document').find("[data-button]"), function () {
+                if ($(this).attr('data-button') === 'next') {
+                    $(this).style.display = 'none';
+                } else if ($(item).attr('data-button') === 'showResult') {
+                    $(this).style.display = 'block';
+                }
+
+            });
+        }
         JSON.stringify(answer) == JSON.stringify(value) ? correctAnswer() : incorrectAnswer();
     });
 

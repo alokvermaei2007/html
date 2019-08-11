@@ -19,8 +19,11 @@
             Thats right!. You selected correct answer.
         </p>
         <div class="dialog__cta">
-            <button class="c-button" onclick="moveNext()">
+            <button class="c-button" data-button="next" onclick="moveNext()">
                 continue
+            </button>
+            <button class="c-button" data-button="showResult" onclick="moveToNextPage(8)">
+                Show Result
             </button>
         </div>
     </div>
@@ -31,8 +34,11 @@
 
         <p>Thats wrong!. You selected wrong answer.</p>
         <div class="dialog__cta">
-            <button class="c-button" onclick="moveNext()">
+            <button class="c-button" data-button="next" onclick="moveNext()">
                 continue
+            </button>
+            <button class="c-button" data-button="showResult" onclick="moveToNextPage(8)">
+                Show Result
             </button>
         </div>
     </div>
@@ -203,7 +209,7 @@
     <!-- ==================   QUESTION PAGE 4  =====================-->
     <article data-page="page4" id='page4'>
         <section class="wrapper section-question">
-            <form data-answer="3">
+            <form data-answer="3" data-next-question="5">
                 <div class="section-question__head">
                     <h1 class="section-question__heading">Assessment Question</h1>
                     <figure class="section-question__logo">
@@ -258,6 +264,42 @@
     </article>
 
     <!-- ==================   END QUESTION PAGE 4  =====================-->
+
+
+
+    <article data-page="page5" id='page5'>
+        <section class="wrapper section-result">
+            <h1 class="section-result__heading">Your Results</h1>
+            <div class="section-result__body">
+                <div class="section-result__content">
+                    <div class="section-result__text">
+                        Your Score:
+                        <span>20%</span>
+                    </div>
+                    <div class="section-result__text">
+                        Passing Score:
+
+                        <span>80%</span>
+                    </div>
+                    <form class="section-result__form">
+                        <textarea class="section-result__text-area" rows="10">text box to provide fail or pass message that will be editable</textarea>
+                    </form>
+
+                    <div class="section-result__button-wrapper">
+                        <button class="c-button">View Your Results</button>
+                        <button class="c-button">Retake</button>
+                        <button class="c-button">Print Results</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+    </article>
 
 
     <script src="js/external/js/jquery.js"></script>
