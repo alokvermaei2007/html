@@ -13,36 +13,6 @@
 
 <body>
 
-    <!-- ==================  START Correct Answer Dialog =====================-->
-    <div id="correctDialog" title="Correct">
-        <p>
-            Thats right!. You selected correct answer.
-        </p>
-        <div class="dialog__cta">
-            <button class="c-button" data-button="next" onclick="moveNext()">
-                continue
-            </button>
-            <button class="c-button" data-button="showResult" onclick="moveToNextPage(8)">
-                Show Result
-            </button>
-        </div>
-    </div>
-    <!-- ==================  END Correct Answer Dialog =====================-->
-
-    <!-- ==================  START Incorrect Answer Dialog =====================-->
-    <div id="incorrectDialog" title="Incorrect">
-
-        <p>Thats wrong!. You selected wrong answer.</p>
-        <div class="dialog__cta">
-            <button class="c-button" data-button="next" onclick="moveNext()">
-                continue
-            </button>
-            <button class="c-button" data-button="showResult" onclick="moveToNextPage(8)">
-                Show Result
-            </button>
-        </div>
-    </div>
-    <!-- ==================  END Incorrect Answer Dialog =====================-->
     <!-- ==================  START No Answer Dialog =====================-->
     <div id="noAnswer" title="Invalid Answer">
 
@@ -86,15 +56,55 @@
     <!-- ==================  QUESTION PAGE 2  =====================-->
     <article data-page="page2" id='page2'>
         <section class="wrapper section-question">
-
-
             <!--
                 MUTIPLE CHOICE QUESTION NOTES
                 data-question-type="multiple"  ==> specify whether question is multiple choice. we need to present answer in checkbox
                 data-answer="1,3" ==> comma seperated answer of the question. in this case first and thrid answer is correct.
-                data-next-question="3"  ==> helper data used to navigate to next page. here number denote numeric portion of the page e.g. 3 reppresent page3 -->
+                data-next-question="3"  ==> helper data used to navigate to next page. here number denote numeric portion of the page e.g. 3 reppresent page3 
+            
+                FOR MULTIPLE DIALOG
+                data-dialogRef="d2" ==> here data-dialogRef value i.e. d2 should be unique for each question
 
-            <form data-question-type="multiple" data-answer="1,3" data-next-question="3">
+                data-dialogID="d2_correct" ==> used to identify each dialog uniquly.
+                here 'data-dialogID 'value  i.e. is formed based on below assumption
+                d2_correct  ==> this ID is formed with the value of 'data-dialogRef' and '_correct' key
+                "_correct" key is appened for correct answer dialog
+                "_incorrect" key is appened for incorrect answer dialog.
+            -->
+            
+                <form data-question-type="multiple" data-answer="1,3" data-next-question="3" data-dialogRef="d2">
+
+                <!-- ==================  START Correct Answer Dialog =====================-->
+                <div title="Correct" data-dialogID="d2_correct">
+                    <p>
+                        Question1: Thats right!. You selected correct answer.
+                    </p>
+                    <div class="dialog__cta">
+                        <button class="c-button" data-button="next" onclick="moveNext()">
+                            continue
+                        </button>
+                        <button class="c-button" data-button="showResult" onclick="moveToNextPage(8)">
+                            Show Result
+                        </button>
+                    </div>
+                </div>
+                <!-- ==================  END Correct Answer Dialog =====================-->
+
+                <!-- ==================  START Incorrect Answer Dialog =====================-->
+                <div data-dialogID="d2_incorrect" title="Incorrect">
+
+                    <p>Question 1: Thats wrong!. You selected wrong answer.</p>
+                    <div class="dialog__cta">
+                        <button class="c-button" data-button="next" onclick="moveNext()">
+                            continue
+                        </button>
+                        <button class="c-button" data-button="showResult" onclick="moveToNextPage(8)">
+                            Show Result
+                        </button>
+                    </div>
+                </div>
+                <!-- ==================  END Incorrect Answer Dialog =====================-->
+
                 <div class="section-question__head">
                     <h1 class="section-question__heading">Assessment Question</h1>
                     <figure class="section-question__logo">
@@ -151,7 +161,41 @@
     <!-- ==================   QUESTION PAGE 3  =====================-->
     <article data-page="page3" id='page3'>
         <section class="wrapper section-question">
-            <form data-answer="3" data-next-question="4">
+            <form data-answer="3" data-next-question="4" data-dialogRef="d3">
+                <!-- ==================  START Correct Answer Dialog =====================-->
+                <div title="Correct" data-dialogID="d3_correct">
+                    <p>
+                        Question3: Thats right!. You selected correct answer.
+                    </p>
+                    <div class="dialog__cta">
+                        <button class="c-button" data-button="next" onclick="moveNext()">
+                            continue
+                        </button>
+                        <button class="c-button" data-button="showResult" onclick="moveToNextPage(8)">
+                            Show Result
+                        </button>
+                    </div>
+                </div>
+                <!-- ==================  END Correct Answer Dialog =====================-->
+
+
+                <!-- ==================  START Incorrect Answer Dialog =====================-->
+                <div data-dialogID="d3_incorrect" title="Incorrect">
+
+                    <p>Question 2: Thats wrong!. You selected wrong answer.</p>
+                    <div class="dialog__cta">
+                        <button class="c-button" data-button="next" onclick="moveNext()">
+                            continue
+                        </button>
+                        <button class="c-button" data-button="showResult" onclick="moveToNextPage(8)">
+                            Show Result
+                        </button>
+                    </div>
+                </div>
+                <!-- ==================  END Incorrect Answer Dialog =====================-->
+
+
+
                 <div class="section-question__head">
                     <h1 class="section-question__heading">Assessment Question</h1>
                     <figure class="section-question__logo">
@@ -209,7 +253,32 @@
     <!-- ==================   QUESTION PAGE 4  =====================-->
     <article data-page="page4" id='page4'>
         <section class="wrapper section-question">
-            <form data-answer="3" data-next-question="5">
+            <form data-answer="3" data-next-question="5" data-dialogRef="d4">
+                <!-- ==================  START Correct Answer Dialog =====================-->
+                <div title="Correct" data-dialogID="d4_correct">
+                    <p>
+                        Question3: Thats right!. You selected correct answer.
+                    </p>
+                    <div class="dialog__cta">
+                        <button class="c-button" data-button="next" onclick="moveNext()">
+                                Show Result
+                        </button>
+                    </div>
+                </div>
+                <!-- ==================  END Correct Answer Dialog =====================-->
+
+
+                <!-- ==================  START Incorrect Answer Dialog =====================-->
+                <div data-dialogID="d4_incorrect" title="Incorrect">
+
+                    <p>Question 1: Thats wrong!. You selected wrong answer.</p>
+                    <div class="dialog__cta">
+                        <button class="c-button" data-button="next" onclick="moveNext()">
+                            Show Result
+                        </button>
+                    </div>
+                </div>
+                <!-- ==================  END Incorrect Answer Dialog =====================-->
                 <div class="section-question__head">
                     <h1 class="section-question__heading">Assessment Question</h1>
                     <figure class="section-question__logo">
@@ -282,7 +351,8 @@
                         <span>80%</span>
                     </div>
                     <form class="section-result__form">
-                        <textarea class="section-result__text-area" rows="10">text box to provide fail or pass message that will be editable</textarea>
+                        <textarea class="section-result__text-area"
+                            rows="10">text box to provide fail or pass message that will be editable</textarea>
                     </form>
 
                     <div class="section-result__button-wrapper">

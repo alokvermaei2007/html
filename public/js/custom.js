@@ -107,7 +107,7 @@ $(document).ready(function () {
 
     let nextQuestion;
 
-    $("#correctDialog, #incorrectDialog, #noAnswer").dialog({
+    $("[data-dialogID], #noAnswer").dialog({
         autoOpen: false,
         classes: {
             "ui-dialog": "custom-dialog"
@@ -120,6 +120,7 @@ $(document).ready(function () {
 
         const formRef = $(this).closest("form");
         nextQuestion = formRef.attr("data-next-question");
+        dialogID = formRef.attr("data-dialogRef");
         const isMultipleChoice = formRef.attr("data-question-type") === 'multiple'
         const answer = formRef.attr("data-answer").split(',');
         const value = [];
@@ -156,23 +157,26 @@ $(document).ready(function () {
 
             });
         }
-        JSON.stringify(answer) == JSON.stringify(value) ? correctAnswer() : incorrectAnswer();
+
+        JSON.stringify(answer) == JSON.stringify(value) ? correctAnswer(dialogID) : incorrectAnswer(dialogID);
     });
 
-    function correctAnswer() {
-        $("#correctDialog").dialog("open");
+    function correctAnswer(dialogID) {
+        dialogID = `${dialogID}_correct`;
+        $(`[data-dialogID='${dialogID}']`).dialog("open");
     }
 
     function noAnswer() {
         $("#noAnswer").dialog("open");
     }
 
-    function incorrectAnswer() {
-        $("#incorrectDialog").dialog("open");
+    function incorrectAnswer(dialogID) {
+        dialogID = `${dialogID}_incorrect`;
+        $(`[data-dialogID='${dialogID}']`).dialog("open");
     }
 
     window.closeDialog = () => {
-        $("#correctDialog, #incorrectDialog, #noAnswer").dialog("close");
+        $("[data-dialogID], #noAnswer").dialog("close");
     }
 
     window.moveNext = () => {
