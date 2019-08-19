@@ -1,111 +1,23 @@
-;
-((window, $) => {
-    /* THIS SCRIPT IS NEEDED TO TOGGLE  CLASS */
-    window.toggleClass = (targetElement) => {
-        var sourceID = targetElement.getAttribute("data-toggle");
-        elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
-        elementRef.classList.toggle("open");
-    }
+// GLOBAL VARIABLES
+let currentPage = window.currentPage || 1;
+let nextQuestion;
+$(document).ready(function () {
+    renderElement();
 
-
-    /* THIS SCRIPT IS NEEDED FOR PAGINATION  CLASS */
-
-
-    window.currentPage = window.currentPage || 1;
-
-    window.addEventListener("load", () => {
-        renderElement();
-    });
-    window.moveToNextPage = (totalCount) => {
-        window.currentPage = totalCount;
-        // if (window.currentPage > totalCount) {
-        //     window.currentPage = 1;
-        // }
-        renderElement();
-    }
-
-    function renderElement() {
-        const targetedPage = 'page' + window.currentPage;
-        [...document.querySelectorAll("[data-page]")]
-        .map((element) => {
-            if (element.getAttribute("data-page") === targetedPage ||
-                element.getAttribute('id') === targetedPage) {
-                element.style.display = "block";
+    /*THIS SCRIPT IS FOR TAB FEATURE PRESENT BELOW VIDEO LINK*/
+    $('[data-feature="tab"] [data-target]').on('click', function () {
+        targetedContent = $(this).attr('data-target');
+        $('[data-feature="tab"] [data-target]').removeClass("tab__list-link--active");
+        $(this).addClass("tab__list-link--active")
+        $('[data-feature="tab"] [data-content]').each(function () {
+            if ($(this).attr("data-content") === targetedContent) {
+                $(this).addClass("tab__content--open");
             } else {
-                element.style.display = "none";
+                $(this).removeClass("tab__content--open");
             }
         });
 
-        document.getElementById(targetedPage).scrollIntoView();
-    }
-
-    /*THIS SCRIPT IS FOR TAB FEATURE PRESENT BELOW VIDEO LINK*/
-
-    [...document.querySelectorAll('[data-feature="tab"] [data-target]')]
-    .map((element) => {
-        element.addEventListener('click', function (event) {
-            // activate link
-            targetedContent = event.target.getAttribute('data-target');
-
-            [...document.querySelectorAll('[data-feature="tab"] [data-target]')]
-            .map((element) => {
-                if (element.getAttribute("data-target") === targetedContent) {
-                    element.classList.add("tab__list-link--active");
-                } else {
-                    element.classList.remove("tab__list-link--active");
-                }
-            });
-            [...document.querySelectorAll('[data-feature="tab"] [data-content]')]
-            .map((element) => {
-                if (element.getAttribute("data-content") === targetedContent) {
-                    element.classList.add("tab__content--open");
-                } else {
-                    element.classList.remove("tab__content--open");
-                }
-            });
-        });
     });
-
-    /*THIS SCRIPT IS QUESTION ANSWER SECTION*/
-
-    window.submitAnswer = (buttonRef) => {
-        selectedAnswer = buttonRef.getAttribute('data-selectedOption');
-        let element = document.getElementById('page' + window.currentPage);
-        element.classList.add("question-answered");
-        currentAnswer = element.getAttribute('data-answer');
-
-        optionRef = document.querySelector('[data-toggleId="option' + selectedAnswer + '"]');
-        if (selectedAnswer === currentAnswer) {
-            optionRef.classList.add('success');
-        } else {
-            optionRef.classList.add('error');
-        }
-    }
-
-
-    /* THIS SCRIPT FOR ACCORDIAN WITH SINGLE PANEL OPEN AT ANY POINT OF TIME */
-    window.togglePanel = (targetElement) => {
-
-        // find closest parent containing data-feature="accordian"
-        const targetParent = targetElement.closest("[data-feature='accordian']");
-
-        const sourceID = targetElement.getAttribute("data-toggle");
-
-        targetParent.querySelectorAll('[data-toggleId]')
-            .forEach(element => {
-                element.classList.remove("open");
-            });
-        elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
-        elementRef.classList.add("open");
-    }
-
-})(window, jQuery);
-
-
-
-$(document).ready(function () {
-
-    let nextQuestion;
 
     $("[data-dialogID], #noAnswer").dialog({
         autoOpen: false,
@@ -147,7 +59,6 @@ $(document).ready(function () {
         }
 
         if (!nextQuestion) {
-
             $.each($('document').find("[data-button]"), function () {
                 if ($(this).attr('data-button') === 'next') {
                     $(this).style.display = 'none';
@@ -161,28 +72,98 @@ $(document).ready(function () {
         JSON.stringify(answer) == JSON.stringify(value) ? correctAnswer(dialogID) : incorrectAnswer(dialogID);
     });
 
-    function correctAnswer(dialogID) {
-        dialogID = `${dialogID}_correct`;
-        $(`[data-dialogID='${dialogID}']`).dialog("open");
-    }
 
-    function noAnswer() {
-        $("#noAnswer").dialog("open");
-    }
-
-    function incorrectAnswer(dialogID) {
-        dialogID = `${dialogID}_incorrect`;
-        $(`[data-dialogID='${dialogID}']`).dialog("open");
-    }
-
-    window.closeDialog = () => {
-        $("[data-dialogID], #noAnswer").dialog("close");
-    }
-
-    window.moveNext = () => {
-        window.closeDialog();
-        if (!!nextQuestion) {
-            window.moveToNextPage(nextQuestion);
-        }
-    }
 });
+
+
+
+/* THIS SCRIPT IS NEEDED TO TOGGLE  CLASS */
+function toggleClass(targetElement) {
+    var sourceID = targetElement.getAttribute("data-toggle");
+    elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
+    elementRef.classList.toggle("open");
+}
+
+/* THIS SCRIPT IS NEEDED FOR PAGINATION  CLASS */
+function renderElement() {
+    const targetedPage = 'page' + currentPage;
+    $('[data-page]').each(function () {
+        if ($(this).data("page") === targetedPage) {
+            $(this).css({
+                'display': 'block'
+            });
+        } else {
+            $(this).css({
+                'display': 'none'
+            });
+        }
+    });
+    $(window).scrollTop(0);
+}
+
+function moveToNextPage(totalCount) {
+    currentPage = totalCount;
+    if (currentPage > totalCount) {
+        urrentPage = 1;
+    }
+    renderElement();
+}
+
+/*THIS SCRIPT IS QUESTION ANSWER SECTION*/
+function submitAnswer(buttonRef) {
+    selectedAnswer = buttonRef.getAttribute('data-selectedOption');
+    let element = document.getElementById('page' + currentPage);
+    element.classList.add("question-answered");
+    currentAnswer = element.getAttribute('data-answer');
+
+    optionRef = document.querySelector('[data-toggleId="option' + selectedAnswer + '"]');
+    if (selectedAnswer === currentAnswer) {
+        optionRef.classList.add('success');
+    } else {
+        optionRef.classList.add('error');
+    }
+}
+
+
+/* THIS SCRIPT FOR ACCORDIAN WITH SINGLE PANEL OPEN AT ANY POINT OF TIME */
+function togglePanel(targetElement) {
+
+    // find closest parent containing data-feature="accordian"
+    const targetParent = targetElement.closest("[data-feature='accordian']");
+
+    const sourceID = targetElement.getAttribute("data-toggle");
+
+    targetParent.querySelectorAll('[data-toggleId]')
+        .forEach(element => {
+            element.classList.remove("open");
+        });
+    elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
+    elementRef.classList.add("open");
+}
+
+
+
+function correctAnswer(dialogID) {
+    dialogID = dialogID + '_correct';
+    $('[data-dialogID="' + dialogID + '"]').dialog("open");
+}
+
+function noAnswer() {
+    $("#noAnswer").dialog("open");
+}
+
+function incorrectAnswer(dialogID) {
+    dialogID = dialogID + '_incorrect';
+    $('[data-dialogID="' + dialogID + '"]').dialog("open");
+}
+
+function closeDialog() {
+    $("[data-dialogID], #noAnswer").dialog("close");
+}
+
+function moveNext() {
+    closeDialog();
+    if (!!nextQuestion) {
+        window.moveToNextPage(nextQuestion);
+    }
+}
