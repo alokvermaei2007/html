@@ -7,11 +7,12 @@
     background-repeat: no-repeat;
     min-height: 500px;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .section-top__card {
     position: relative;
-    top: 50px;
     max-width: 450px;
     background: #006e9cc7;
     padding: 50px 25px;
