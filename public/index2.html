@@ -47,18 +47,21 @@
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
-                    <div class="swiper-slide">Slide 10</div>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel__slides"
+                            style="background-image: url('./images/carousel/image1.jpg');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel__slides"
+                            style="background-image: url('./images/carousel/image2.jpg');"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="hero-carousel__slides"
+                            style="background-image: url('./images/carousel/image3.jpg');"></div>
+                    </div>
                 </div>
             </div>
+
         </section>
         <section class="wrapper welcome-section">
             <div class="section-head">
@@ -101,20 +104,53 @@
             <!-- Swiper -->
             <div class="testimony-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
-                    <div class="swiper-slide">Slide 10</div>
+                    <div class="swiper-slide">
+                        <div class="testimony__container">
+                            <div class="testimony__body">
+                                <figure class="testimony__figure">
+                                    <img src="./images/carousel/testimony1.jpg" alt="" class="testimony__image">
+                                </figure>
+                                <p class="testimony__para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos soluta a assumenda aut
+                                    non, magnam ipsam necessitatibus architecto veritatis blanditiis?
+                                    <span class="testimony__name">--Andrew</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimony__container">
+                            <div class="testimony__body">
+                                <figure class="testimony__figure">
+                                    <img src="./images/carousel/testimony2.jpg" alt="" class="testimony__image">
+                                </figure>
+                                <p class="testimony__para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos soluta a assumenda aut
+                                    non, magnam ipsam necessitatibus architecto veritatis blanditiis?
+                                    <span class="testimony__name">--Michelle</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimony__container">
+                            <div class="testimony__body">
+                                <figure class="testimony__figure">
+                                    <img src="./images/carousel/testimony3.png" alt="" class="testimony__image">
+                                </figure>
+                                <p class="testimony__para">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos soluta a assumenda aut
+                                    non, magnam ipsam necessitatibus architecto veritatis blanditiis?
+                                    <span class="testimony__name">--Smith</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next swiper-button--sm"></div>
+                <div class="swiper-button-prev swiper-button--sm"></div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
@@ -128,49 +164,77 @@
             <div class="team-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="#">Slide 1 </a>
+                        <div class="team-info__wrapper">
+                            <a href="#" class="team-info__body">
+                                <figure class="team-info__figure">
+                                    <img src="./images/carousel/testimony1.jpg" alt="" class="team-info__image">
+                                </figure>
+                                <div class="team-info__details">
+                                    <div class="team-info__name">Andrew Walson</div>
+                                    <div class="team-info__title">Director</div>
+                                    <div class="team-info__birthday"> 19 Aug</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">Slide 2 </a>
+                        <div class="team-info__wrapper">
+                            <a href="#" class="team-info__body">
+                                <figure class="team-info__figure">
+                                    <img src="./images/carousel/testimony3.png" alt="" class="team-info__image">
+                                </figure>
+                                <div class="team-info__details">
+                                    <div class="team-info__name">Augusta Mandela</div>
+                                    <div class="team-info__title">HOD</div>
+                                    <div class="team-info__birthday"> 19 Dec</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">Slide 3 </a>
+                        <div class="team-info__wrapper">
+                            <a href="#" class="team-info__body">
+                                <figure class="team-info__figure">
+                                    <img src="./images/carousel/testimony2.jpg" alt="" class="team-info__image">
+                                </figure>
+                                <div class="team-info__details">
+                                    <div class="team-info__name">Maria Anderson</div>
+                                    <div class="team-info__title">Dean</div>
+                                    <div class="team-info__birthday"> 19 Sept</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="#">Slide 4 </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">Slide 5 </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">Slide 6 </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">Slide 7 </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">Slide 8 </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#">Slide 9 </a>
+                        <div class="team-info__wrapper">
+                            <a href="#" class="team-info__body">
+                                <figure class="team-info__figure">
+                                    <img src="./images/carousel/testimony3.png" alt="" class="team-info__image">
+                                </figure>
+                                <div class="team-info__details">
+                                    <div class="team-info__name">Andrew Walson</div>
+                                    <div class="team-info__title">Director</div>
+                                    <div class="team-info__birthday"> 19 Aug</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
                 <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination swiper-pagination--inverse"></div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next swiper-button--sm"></div>
+                <div class="swiper-button-prev swiper-button--sm"></div>
             </div>
         </section>
 
 
-        <footer class="wrapper">
+        <footer class="wrapper footer-content">
             <a href="">
                 <img src="./images/logo.png" alt="Logo" />
             </a>
-
         </footer>
-
     </div>
 
 </body>

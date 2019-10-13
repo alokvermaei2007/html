@@ -47,7 +47,15 @@ body {
 }
 
 .hero-carousel {
-    height: 300px;
+    height: 500px;
+}
+
+.hero-carousel__slides {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -121,8 +129,113 @@ body {
     position: relative;
 }
 
+
+.testimony__container {
+    padding: 25px 60px;
+    height: 100%;
+    width: 100%;
+}
+
+.testimony__body {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding-left: 150px;
+    position: relative;
+
+}
+
+.testimony__figure {
+    border-radius: 50%;
+    height: 150px;
+    overflow: hidden;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 150px;
+
+}
+
+.testimony__image {
+    display: block;
+    max-width: 100%;
+}
+
+.testimony__para {
+    color: #02577b;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.testimony__name {
+    display: block;
+    text-align: right;
+    padding-right: 200px;
+}
+
+.swiper-button--sm:after {
+    color: #009cde;
+    font-size: 30px;
+}
+
+
+
+
 .team-container {
-    height: 200px;
+    height: 250px;
     overflow: hidden;
     position: relative;
+}
+
+.team-info__wrapper {
+    padding: 20px 45px;
+    height: 100%;
+    width: 100%;
+}
+
+.team-info__body {
+    background-color: #003e58;
+    border-radius: 25px;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+
+.team-info__figure {
+    margin: 0 auto 15px auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.team-info__image {
+    display: block;
+    max-width: 100%;
+}
+
+.team-info__details {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+.team-info__details>div {
+    margin-bottom: 5px;
+}
+
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    color: #003e58;
+    --swiper-theme-color: #003e58;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 3px;
+}
+
+.footer-content {
+    background-color: #003e58;
 }
