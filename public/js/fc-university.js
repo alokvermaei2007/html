@@ -5,7 +5,7 @@ $(document).ready(function () {
     //initialize swiper when document ready
     var heroCarousel = new Swiper('.swiper-container', {
         autoplay: {
-            delay: 1000,
+            delay: 3000,
         },
     })
 
