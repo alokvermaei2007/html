@@ -32,5 +32,10 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         },
     })
+
+
+    $( "#accordion" ).accordion({
+        heightStyle: "content"
+      });
 });
 
