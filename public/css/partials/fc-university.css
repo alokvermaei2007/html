@@ -127,13 +127,7 @@ body {
 }
 
 .courses__card:hover .courses__figure {
-    transform: translate3d(0, 0, 0)
-}
-
-
-.courses__card:hover .courses__figure {
     opacity: .5;
-    transform: translate3d(0, 36px, 0);
 }
 
 .courses__link {
@@ -145,15 +139,18 @@ body {
     padding: 10px;
     position: absolute;
     text-decoration: none;
-    transform: translate3d(0, -36px, 0);
     transition: all ease-in-out .5s;
-    width: 100%;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0;
 
 }
 
 .courses__card:hover .courses__link {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
 }
 
 .courses__image {
@@ -351,6 +348,7 @@ body {
     display: flex;
     position: relative;
 }
+
 .resource-accordion__day-count:last-child {
     border: 0;
 }
@@ -371,7 +369,7 @@ body {
     left: 12px;
     position: absolute;
     top: 0;
-    
+
 }
 
 .resource-accordion__left,

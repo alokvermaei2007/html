@@ -6,6 +6,7 @@ $(document).ready(function () {
     var heroCarousel = new Swiper('.swiper-container', {
         autoplay: {
             delay: 3000,
+            disableOnInteraction: false
         },
     })
 
@@ -33,9 +34,11 @@ $(document).ready(function () {
         },
     })
 
+    if ($("#accordion").length > 0) {
+        $("#accordion").accordion({
+            heightStyle: "content"
+        });
+    }
 
-    $( "#accordion" ).accordion({
-        heightStyle: "content"
-      });
 });
 
