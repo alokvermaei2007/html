@@ -27,7 +27,14 @@ body {
     color: #FFF;
 }
 
+.nav-menu:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .menu {
+    float: left;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -44,6 +51,28 @@ body {
     text-decoration: none;
     color: #fff;
     border-right: 1px solid #fff;
+}
+
+.user-option {
+    float: right;
+
+}
+
+.user-option__email {
+    float: left;
+    border-right: 1px solid #fff;
+    margin-right: 10px;
+    padding: 4px 10px 4px 10px;
+    font-size: 22px;
+    color: #FFF;
+}
+
+.user-option__search {
+    float: left;
+    margin-right: 10px;
+    padding: 4px 10px 4px 10px;
+    font-size: 22px;
+    color: #FFF;
 }
 
 .hero-carousel {
@@ -431,4 +460,34 @@ body {
 
 .resource-accordion.ui-accordion .ui-accordion-header {
     background: #ccc;
+}
+
+.important-links {
+    list-style: none;
+}
+
+.important-links__list {
+    display: block;
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 25px;
+    min-height: 40px;
+    color: #fff;
+}
+
+.important-link__image {
+    position: absolute;
+    left: 0;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+}
+
+.important-link__img {
+    max-width: 100%;
+    display: block;
+}
+
+.important-links__link {
+    color: #02577b;
 }
