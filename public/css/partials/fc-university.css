@@ -315,9 +315,49 @@ body {
 
 .footer-content {
     background-color: #003e58;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.footer-content__logo {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    display: inline-block;
+}
 
+.footer-content__img {
+    display: block;
+    max-width: 100%;
+}
+
+.help-text {
+    float: right;
+    max-width: 38%;
+    padding-right: 10px;
+    
+}
+
+.help-text__link {
+    position: relative;
+    padding-left: 54px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.help-text__img-wrapper {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px
+}
+
+.help-text__img {
+    max-width: 100%;
+    display: block;
+}
 
 /* resources Page */
 .breadcrumb:after {
