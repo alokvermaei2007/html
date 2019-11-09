@@ -254,6 +254,11 @@ body {
 .swiper-button--sm:after {
     color: #009cde;
     font-size: 30px;
+    display: none;
+}
+.swiper-button--sm {
+    color: #009cde;
+    font-size: 40px;
 }
 
 
