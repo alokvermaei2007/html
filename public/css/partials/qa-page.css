@@ -98,7 +98,8 @@
 .custom-form__input+label {
     position: relative;
     cursor: pointer;
-    padding: 0;
+    padding-left: 35px;
+    display: block;
 }
 
 .custom-form__input+label:before {
@@ -110,6 +111,8 @@
     height: 20px;
     border: 2px solid #cccccc;
     border-radius: 2px;
+    position: absolute;
+    left: 0;
 }
 
 /* // Box hover */
