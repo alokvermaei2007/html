@@ -72,17 +72,31 @@ $(document).ready(function () {
         JSON.stringify(answer) == JSON.stringify(value) ? correctAnswer(dialogID) : incorrectAnswer(dialogID);
     });
 
+    $('[data-event="accordian-click"]').on('click', function () {
+        var sourceID = $(this).data("toggle");
+        elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
+        elementRef.classList.toggle("open");
+    });
+
+    $('[data-event="panel-click"]').on('click', function () {
+
+
+        // find closest parent containing data-feature="accordian"
+        const targetParent = $(this).closest("[data-feature='accordian']");
+
+        const sourceID = $(this).data("toggle");
+
+        targetParent.children('[data-toggleId]').each(function (element) {
+            element.classList.remove("open");
+        });
+        elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
+        elementRef.classList.add("open");
+    });
+
 
 });
 
 
-
-/* THIS SCRIPT IS NEEDED TO TOGGLE  CLASS */
-function toggleClass(targetElement) {
-    var sourceID = targetElement.getAttribute("data-toggle");
-    elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
-    elementRef.classList.toggle("open");
-}
 
 /* THIS SCRIPT IS NEEDED FOR PAGINATION  CLASS */
 function renderElement() {
@@ -128,17 +142,6 @@ function submitAnswer(buttonRef) {
 /* THIS SCRIPT FOR ACCORDIAN WITH SINGLE PANEL OPEN AT ANY POINT OF TIME */
 function togglePanel(targetElement) {
 
-    // find closest parent containing data-feature="accordian"
-    const targetParent = targetElement.closest("[data-feature='accordian']");
-
-    const sourceID = targetElement.getAttribute("data-toggle");
-
-    targetParent.querySelectorAll('[data-toggleId]')
-        .forEach(element => {
-            element.classList.remove("open");
-        });
-    elementRef = document.getElementById(sourceID) || document.querySelector('[data-toggleId="' + sourceID + '"]');
-    elementRef.classList.add("open");
 }
 
 
