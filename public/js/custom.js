@@ -94,6 +94,13 @@ $(document).ready(function () {
     });
 
 
+    $(".transcript .transcript-exp").click(function(){   
+        var oldText = $(this).html(); 
+        var newText = $(this).data('text');
+        $(this).html(newText).data('text',oldText); 
+        $(this).closest('.transcript').find('.overflowTranscript').toggle();
+        $(this).closest('.transcript').find('.transcript-click').toggle();
+    });
 });
 
 
